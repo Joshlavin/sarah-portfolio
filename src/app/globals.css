@@ -1,26 +1,45 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: #FAF7F4;
+  --color-charcoal: #1A1A1A;
+  --color-graphite: #4A4A4A;
+  --color-matcha: #8FB78F;
+  --color-pistachio: #CBE6C7;
+  --color-azure: #B4CCCF;
+  --color-indigo: #28536B;
+  --color-warm-gray: #E8E3DC;
+  /* Legacy aliases for components that still reference old names */
+  --color-coral: #28536B;
+  --color-pink: #B4CCCF;
+  --color-sage: #8FB78F;
+  --color-periwinkle: #B4CCCF;
+  --color-blue: #28536B;
+  --color-green: #8FB78F;
+  --color-yellow: #B4CCCF;
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-instrument-serif);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-cream);
+    color: var(--color-charcoal);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
   }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--color-charcoal); border-radius: 3px; opacity: 0.15; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-indigo); }
+  ::selection { background: var(--color-indigo); color: white; }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes scribble-draw { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+
+@layer components {
+  .scribble-circle { stroke-dasharray: 1000; stroke-dashoffset: 1000; }
+  .group:hover .scribble-circle { animation: scribble-draw 0.6s ease forwards; }
+  .cursor-trail { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999; }
 }

@@ -1,6 +1,7 @@
 export type Category =
   | "Production Design"
   | "Visual Development"
+  | "Personal Projects"
   | "Fine Art"
   | "3D Visualization"
   | "Photography"
@@ -39,6 +40,7 @@ export interface Project {
 export const categories: Category[] = [
   "Production Design",
   "Visual Development",
+  "Personal Projects",
   "Fine Art",
   "3D Visualization",
   "Photography",
@@ -48,6 +50,7 @@ export const categories: Category[] = [
 export const categoryColors: Record<Category, string> = {
   "Production Design": "#4A7CE8",
   "Visual Development": "#A8B8D8",
+  "Personal Projects": "#9B7EBD",
   "Fine Art": "#F2B8C6",
   "3D Visualization": "#4CB963",
   Photography: "#F5C842",
@@ -73,6 +76,12 @@ export const categoryMeta: CategoryMeta[] = [
     name: "Visual Development",
     tagline: "World-building, character design, and visual storytelling.",
     heroImage: "/images/projects/lost-city-of-zeloria/lost-city-of-zeloria-01.jpg",
+  },
+  {
+    slug: "personal-projects",
+    name: "Personal Projects",
+    tagline: "Self-initiated studies and speculative concepts — exploring ideas outside of client work.",
+    heroImage: "/images/projects/inside-out/inside-out-01.jpg",
   },
   {
     slug: "fine-art",
@@ -484,7 +493,7 @@ export const projects: Project[] = [
   {
     slug: "inside-out",
     title: "Inside Out",
-    category: "Production Design",
+    category: "Personal Projects",
     description:
       "A self-initiated design study reimagining the world of Pixar's Inside Out for live action — environment design, palette, materials, plans, and key art.",
     thumbnail: "/images/projects/inside-out/inside-out-01.jpg",
@@ -509,7 +518,7 @@ export const projects: Project[] = [
   {
     slug: "fam",
     title: "FAM",
-    category: "Production Design",
+    category: "Personal Projects",
     description:
       "Three interior environments — bedroom, kitchen, living room — for a short film concept. Director plans, render models, and dressing concepts.",
     thumbnail: "/images/projects/fam/fam-04.jpg",
@@ -533,7 +542,7 @@ export const projects: Project[] = [
   {
     slug: "taylor-swift-show",
     title: "The Taylor Swift Show",
-    category: "Production Design",
+    category: "Personal Projects",
     description:
       "A self-initiated concert design study imagining the staging for a Taylor Swift live show — stage layouts, stylized renders, and visual treatment.",
     thumbnail: "/images/projects/taylor-swift-show/taylor-swift-show-02.jpg",
@@ -554,7 +563,7 @@ export const projects: Project[] = [
   {
     slug: "all-summer-in-a-day",
     title: "All Summer in a Day",
-    category: "Production Design",
+    category: "Personal Projects",
     description:
       "Production design concept based on the Ray Bradbury short story. Mood, environment, and visual treatment.",
     thumbnail: "/images/projects/all-summer-in-a-day/all-summer-in-a-day-01.jpg",
@@ -572,7 +581,7 @@ export const projects: Project[] = [
   {
     slug: "dc-apartment",
     title: "DC Apartment",
-    category: "Production Design",
+    category: "Personal Projects",
     description:
       "A contemporary DC apartment environment built from research and reference.",
     thumbnail: "/images/projects/dc-apartment/dc-apartment-01.jpg",

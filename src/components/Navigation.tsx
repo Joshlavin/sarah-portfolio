@@ -22,7 +22,7 @@ export default function Navigation() {
         {/* Logo / Name */}
         <Link href="/" className="relative group">
           <span className="font-[family-name:var(--font-poppins)] text-lg text-white font-semibold tracking-tight">
-            Sarah R. Lavin
+            Sarah Lavin
           </span>
         </Link>
 

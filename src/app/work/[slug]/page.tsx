@@ -6,8 +6,59 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/data/projects";
+import type { ImageSection } from "@/data/projects";
 import { notFound } from "next/navigation";
 import Lightbox from "@/components/Lightbox";
+import ImageCompare from "@/components/ImageCompare";
+
+function isVideo(src: string) {
+  return /\.(mp4|mov|webm)$/i.test(src);
+}
+
+function MediaTile({
+  src,
+  alt,
+  onClick,
+  bgColor,
+  className = "",
+  sizes = "(max-width: 768px) 50vw, 370px",
+  aspect = "aspect-square",
+}: {
+  src: string;
+  alt: string;
+  onClick?: () => void;
+  bgColor: string;
+  className?: string;
+  sizes?: string;
+  aspect?: string;
+}) {
+  const video = isVideo(src);
+  return (
+    <div
+      className={`relative ${aspect} rounded-xl overflow-hidden ${onClick && !video ? "cursor-pointer" : ""} group ${className}`}
+      style={{ backgroundColor: bgColor }}
+      onClick={video ? undefined : onClick}
+    >
+      {video ? (
+        <video
+          src={src}
+          controls
+          playsInline
+          preload="metadata"
+          className="w-full h-full object-cover"
+        />
+      ) : (
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes={sizes}
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      )}
+    </div>
+  );
+}
 
 export default function ProjectPage() {
   const { slug } = useParams();
@@ -18,15 +69,28 @@ export default function ProjectPage() {
     notFound();
   }
 
+  // Build a flat list of all media for the lightbox + adjacent navigation
+  const sections: ImageSection[] = project.sections ?? (project.images ? [{ label: "", images: project.images }] : []);
+  const flatMedia: string[] = sections.flatMap((s) => [
+    ...(s.images ?? []),
+    ...(s.compares?.flatMap((c) => [c.before, c.after]) ?? []),
+  ]);
+  // Lightbox can only handle still images, not video — filter those out
+  const lightboxImages = flatMedia.filter((m) => !isVideo(m));
+
   // Find adjacent projects for navigation
   const currentIndex = projects.indexOf(project);
   const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
   const nextProject =
     currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
 
+  // Hero: prefer thumbnail, fall back to first media item
+  const heroSrc = project.thumbnail || flatMedia[0];
+  const heroIsVideo = heroSrc ? isVideo(heroSrc) : false;
+
   return (
     <>
-      {/* Hero */}
+      {/* Hero text */}
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-5xl mx-auto">
           <motion.div
@@ -66,45 +130,50 @@ export default function ProjectPage() {
         </div>
       </section>
 
-      {/* Main image */}
-      <motion.section
-        className="px-6 mb-16"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-      >
-        <div className="max-w-6xl mx-auto">
-          {project.images && project.images.length > 0 ? (
+      {/* Hero image */}
+      {heroSrc && (
+        <motion.section
+          className="px-6 mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
+          <div className="max-w-6xl mx-auto">
             <div
-              className="relative aspect-video rounded-2xl overflow-hidden cursor-pointer"
+              className={`relative aspect-video rounded-2xl overflow-hidden ${heroIsVideo ? "" : "cursor-pointer"}`}
               style={{ backgroundColor: project.color }}
-              onClick={() => setLightboxIndex(0)}
+              onClick={
+                heroIsVideo
+                  ? undefined
+                  : () => {
+                      const idx = lightboxImages.indexOf(heroSrc);
+                      setLightboxIndex(idx >= 0 ? idx : 0);
+                    }
+              }
             >
-              <Image
-                src={project.images[0]}
-                alt={project.title}
-                fill
-                sizes="(max-width: 768px) 100vw, 1152px"
-                className="object-cover"
-                priority
-              />
+              {heroIsVideo ? (
+                <video
+                  src={heroSrc}
+                  controls
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <Image
+                  src={heroSrc}
+                  alt={project.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 1152px"
+                  className="object-cover"
+                  priority
+                />
+              )}
             </div>
-          ) : (
-            <div
-              className="aspect-video rounded-2xl overflow-hidden"
-              style={{ backgroundColor: project.color }}
-            >
-              <div className="w-full h-full flex items-center justify-center">
-                <span className="font-[family-name:var(--font-instrument-serif)] text-white/60 text-4xl italic">
-                  Project Images
-                </span>
-              </div>
-            </div>
-          )}
-        </div>
-      </motion.section>
+          </div>
+        </motion.section>
+      )}
 
-      {/* Details */}
+      {/* Details + sidebar */}
       <section className="px-6 pb-16">
         <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-12">
           {/* Sidebar */}
@@ -132,6 +201,28 @@ export default function ProjectPage() {
               </div>
             )}
 
+            {project.type && (
+              <div className="mb-8">
+                <h3 className="text-xs uppercase tracking-widest text-[var(--color-charcoal)]/40 mb-3">
+                  Type
+                </h3>
+                <p className="text-sm text-[var(--color-charcoal)]/70">
+                  {project.type}
+                </p>
+              </div>
+            )}
+
+            {project.studio && (
+              <div className="mb-8">
+                <h3 className="text-xs uppercase tracking-widest text-[var(--color-charcoal)]/40 mb-3">
+                  Studio
+                </h3>
+                <p className="text-sm text-[var(--color-charcoal)]/70">
+                  {project.studio}
+                </p>
+              </div>
+            )}
+
             <div>
               <h3 className="text-xs uppercase tracking-widest text-[var(--color-charcoal)]/40 mb-3">
                 Category
@@ -142,7 +233,7 @@ export default function ProjectPage() {
             </div>
           </motion.div>
 
-          {/* Main content */}
+          {/* Details copy */}
           <motion.div
             className="md:col-span-2"
             initial={{ opacity: 0, x: 20 }}
@@ -151,48 +242,92 @@ export default function ProjectPage() {
             transition={{ delay: 0.2 }}
           >
             {project.details && (
-              <p className="text-lg text-[var(--color-charcoal)]/70 leading-relaxed mb-8">
+              <p className="text-lg text-[var(--color-charcoal)]/70 leading-relaxed">
                 {project.details}
               </p>
-            )}
-
-            {/* Image grid */}
-            {project.images && project.images.length > 1 ? (
-              <div className="grid grid-cols-2 gap-4">
-                {project.images.slice(1).map((img, i) => (
-                  <div
-                    key={i}
-                    className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group"
-                    style={{ backgroundColor: project.color }}
-                    onClick={() => setLightboxIndex(i + 1)}
-                  >
-                    <Image
-                      src={img}
-                      alt={`${project.title} - ${i + 2}`}
-                      fill
-                      sizes="(max-width: 768px) 50vw, 370px"
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="grid grid-cols-2 gap-4">
-                {[1, 2, 3, 4].map((n) => (
-                  <div
-                    key={n}
-                    className="aspect-square rounded-xl"
-                    style={{
-                      backgroundColor: project.color,
-                      opacity: 0.3 + n * 0.15,
-                    }}
-                  />
-                ))}
-              </div>
             )}
           </motion.div>
         </div>
       </section>
+
+      {/* Sectioned galleries */}
+      {sections.length > 0 && (
+        <section className="px-6 pb-16">
+          <div className="max-w-6xl mx-auto space-y-20">
+            {sections.map((section) => {
+              const sectionItemCount = (section.images?.length ?? 0) + (section.compares?.length ?? 0);
+              const itemNoun = section.compares && section.compares.length > 0 ? "comparison" : "item";
+              return (
+                <div key={section.label || "main"}>
+                  {section.label && (
+                    <motion.div
+                      className="mb-8 flex items-baseline gap-4"
+                      initial={{ opacity: 0, y: 12 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                    >
+                      <h2 className="font-[family-name:var(--font-instrument-serif)] text-3xl md:text-4xl italic text-[var(--color-charcoal)]">
+                        {section.label}
+                      </h2>
+                      <span className="text-xs uppercase tracking-widest text-[var(--color-charcoal)]/40">
+                        {sectionItemCount} {sectionItemCount === 1 ? itemNoun : `${itemNoun}s`}
+                      </span>
+                      <div className="flex-1 h-px bg-[var(--color-charcoal)]/10" />
+                    </motion.div>
+                  )}
+
+                  {/* Before/After compare blocks */}
+                  {section.compares && section.compares.length > 0 && (
+                    <div className="space-y-12 mb-12">
+                      {section.compares.map((pair) => (
+                        <motion.div
+                          key={pair.before + pair.after}
+                          initial={{ opacity: 0, y: 16 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                        >
+                          <ImageCompare
+                            before={pair.before}
+                            after={pair.after}
+                            beforeLabel={pair.beforeLabel ?? "Rendering"}
+                            afterLabel={pair.afterLabel ?? "Built"}
+                            alt={`${project.title} — ${pair.caption ?? "comparison"}`}
+                          />
+                          {pair.caption && (
+                            <p className="mt-3 text-xs uppercase tracking-widest text-[var(--color-charcoal)]/50">
+                              {pair.caption}
+                            </p>
+                          )}
+                        </motion.div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Standard image grid */}
+                  {section.images && section.images.length > 0 && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {section.images.map((src, i) => (
+                        <MediaTile
+                          key={src}
+                          src={src}
+                          alt={`${project.title}${section.label ? " — " + section.label : ""} ${i + 1}`}
+                          bgColor={project.color}
+                          onClick={() => {
+                            const idx = lightboxImages.indexOf(src);
+                            if (idx >= 0) setLightboxIndex(idx);
+                          }}
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
+                          aspect={isVideo(src) ? "aspect-video" : "aspect-[4/3]"}
+                        />
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {/* Navigation between projects */}
       <section className="px-6 py-16 border-t border-[var(--color-charcoal)]/5">
@@ -231,9 +366,9 @@ export default function ProjectPage() {
       </section>
 
       {/* Lightbox */}
-      {lightboxIndex !== null && project.images && (
+      {lightboxIndex !== null && lightboxImages.length > 0 && (
         <Lightbox
-          images={project.images}
+          images={lightboxImages}
           initialIndex={lightboxIndex}
           alt={project.title}
           onClose={() => setLightboxIndex(null)}

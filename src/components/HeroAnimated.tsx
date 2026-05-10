@@ -78,8 +78,7 @@ const DISCIPLINES = [
   { text: "Illustrator", color: "#8FB78F" },
   { text: "Fine Artist", color: "#28536B" },
   { text: "Visual Storyteller", color: "#8FB78F" },
-  { text: "Set Designer", color: "#28536B" },
-  { text: "3D Artist", color: "#8FB78F" },
+  { text: "3D Artist", color: "#28536B" },
 ];
 
 function TypingDiscipline() {
@@ -128,31 +127,34 @@ function TypingDiscipline() {
 /*  CSS-based marquee (much lighter than Framer Motion)               */
 /* ------------------------------------------------------------------ */
 
+// ROW 1 — production design + paintings (warm, story-rich)
 const ROW1 = [
-  "/images/projects/fine-art/painting-1.jpeg",
-  "/images/projects/the-bonsai/forest-1.jpg",
-  "/images/projects/interior-renderings/theater.jpg",
-  "/images/projects/photography/photo-3.jpeg",
-  "/images/projects/lost-city-of-zeloria/zeloria-1.jpg",
-  "/images/projects/graphic-design/growth-cover.jpg",
+  "/images/projects/the-bonsai/stills/the-bonsai-stills-01.jpg",
+  "/images/projects/back-to-me/set-photos/back-to-me-set-photos-01.jpg",
+  "/images/projects/oil-paintings/oil-paintings-01.jpg",
+  "/images/projects/inside-out/inside-out-01.jpg",
+  "/images/projects/happy-gilmore-2/happy-gilmore-2-01.jpg",
+  "/images/projects/all-summer-in-a-day/all-summer-in-a-day-01.jpg",
 ];
 
+// ROW 2 — visdev + photography + 3D (cool, atmospheric)
 const ROW2 = [
-  "/images/projects/lost-city-of-zeloria/zeloria-3.jpg",
-  "/images/projects/fine-art/painting-5.jpeg",
-  "/images/projects/photography/photo-1.jpeg",
-  "/images/projects/sketchbook/mexico.jpg",
-  "/images/projects/graphic-design/album-1.jpg",
-  "/images/projects/the-bonsai/hoarder-1.jpg",
+  "/images/projects/lost-city-of-zeloria/lost-city-of-zeloria-01.jpg",
+  "/images/projects/people-portrait/people-portrait-01.jpg",
+  "/images/projects/luxury-add-on/luxury-add-on-06.jpg",
+  "/images/projects/environments/environments-02.jpg",
+  "/images/projects/oil-paintings/oil-paintings-05.jpg",
+  "/images/projects/album-artwork/album-artwork-01.jpg",
 ];
 
+// ROW 3 — high-impact mix (fine art, character, in-world graphics)
 const ROW3 = [
-  "/images/projects/interior-renderings/night-render.jpg",
-  "/images/projects/fine-art/painting-7.jpeg",
-  "/images/projects/photography/photo-7.jpeg",
-  "/images/projects/sketchbook/sketch-5.jpg",
-  "/images/projects/fine-art/painting-4.jpeg",
-  "/images/projects/the-bonsai/bts.jpeg",
+  "/images/projects/quieting-the-noise/final-pieces/quieting-the-noise-final-pieces-01.jpg",
+  "/images/projects/back-to-me/stills/back-to-me-stills-04.jpg",
+  "/images/projects/character-design/character-design-01.jpg",
+  "/images/projects/sketchbook/sketchbook-01.jpg",
+  "/images/projects/acrylic-paintings/acrylic-paintings-01.jpg",
+  "/images/projects/the-bonsai/stills/the-bonsai-stills-15.jpg",
 ];
 
 function MarqueeRow({
@@ -193,7 +195,7 @@ function MarqueeRow({
 export default function HeroAnimated() {
   const containerRef = useRef<HTMLDivElement>(null);
   const isMobile = useIsMobile();
-  const line1 = "Sarah R.";
+  const line1 = "Sarah";
   const line2 = "Lavin";
 
   const line1Chars = useMemo(() => line1.split(""), []);

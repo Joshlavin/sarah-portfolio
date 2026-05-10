@@ -26,7 +26,7 @@ const AZURE = "#B4CCCF";
 const PISTACHIO = "#CBE6C7";
 
 const DOODLES: HiddenDoodleConfig[] = [
-  // --- Around "Sarah R." line ---
+  // --- Around "Sarah" line ---
 
   // Small flower, left of S
   {

@@ -110,8 +110,7 @@ export default function ContactPage() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            Based in California, United States. Available for remote and
-            on-site work.
+            Based in Los Angeles. Available for remote and on-site work.
           </motion.p>
         </div>
       </section>

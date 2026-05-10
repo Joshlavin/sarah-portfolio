@@ -1,9 +1,34 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import SectionColorWash from "@/components/SectionColorWash";
 
 const filmography = [
+  {
+    title: "Wake Up Dead Man: A Knives Out Mystery",
+    role: "Production Designer",
+    type: "Premiere Event",
+    year: "2025",
+  },
+  {
+    title: "Frankenstein",
+    role: "Production Designer",
+    type: "Premiere Event",
+    year: "2025",
+  },
+  {
+    title: "Happy Gilmore 2",
+    role: "Production Designer",
+    type: "Premiere Event",
+    year: "2025",
+  },
+  {
+    title: "Double Time",
+    role: "Production Designer",
+    type: "Short Film",
+    year: "2024",
+  },
   {
     title: "The Bonsai",
     role: "Production Designer",
@@ -11,48 +36,34 @@ const filmography = [
     year: "2024",
   },
   {
+    title: "Coop",
+    role: "Production Designer",
+    type: "Short Film",
+    year: "2023",
+  },
+  {
     title: "Kissinger Takes Paris",
     role: "Production Designer",
     type: "Proof of Concept",
     year: "2023",
   },
-];
-
-const experience = [
   {
+    title: "Back to Me",
     role: "Production Designer",
-    company: "Film & Live Events",
-    period: "2021 - Present",
-    description:
-      "Set design, art direction, and hands-on build work for narrative short films and live events. Designed and built multi-environment sets including hand-carved foam structures, detailed interiors, and immersive environments.",
-  },
-  {
-    role: "Visual Artist & Illustrator",
-    company: "Personal & Commission Work",
-    period: "2019 - Present",
-    description:
-      "Oil paintings, illustrations, and visual development work. World-building, character design, and visual storytelling for film and animation projects.",
-  },
-  {
-    role: "Freelance Designer",
-    company: "Various Clients",
-    period: "2019 - Present",
-    description:
-      "3D rendering, interior design visualization, graphic design, album artwork, packaging, and promotional materials for brands, musicians, and individuals.",
+    type: "Short Film",
+    year: "2022",
   },
 ];
 
 const tools = [
   "Rhino",
   "Enscape",
+  "Lumion",
   "SketchUp",
   "Photoshop",
   "Illustrator",
   "Procreate",
   "Lightroom",
-  "InDesign",
-  "After Effects",
-  "Premiere Pro",
 ];
 
 export default function AboutPage() {
@@ -68,12 +79,15 @@ export default function AboutPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <div className="aspect-[3/4] rounded-2xl bg-[var(--color-warm-gray)] overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center">
-                  <span className="font-[family-name:var(--font-instrument-serif)] text-[var(--color-charcoal)]/30 text-2xl italic">
-                    Photo
-                  </span>
-                </div>
+              <div className="relative aspect-[3/4] rounded-2xl bg-[var(--color-warm-gray)] overflow-hidden">
+                <Image
+                  src="/images/sarah/sarah-about.jpg"
+                  alt="Sarah Lavin"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 480px"
+                  className="object-cover"
+                  priority
+                />
               </div>
             </motion.div>
 
@@ -92,21 +106,21 @@ export default function AboutPage() {
               </h1>
               <div className="space-y-4 text-lg text-[var(--color-charcoal)]/60 font-light leading-relaxed">
                 <p>
-                  I&apos;m a designer and visual artist based in California.
-                  I work across production design, illustration, fine art,
-                  3D rendering, and graphic design.
+                  I&apos;m a designer and visual artist based in Los Angeles
+                  with experience across many art fields — production design,
+                  visual development, fine art, 3D visualization, photography,
+                  and graphic design.
                 </p>
                 <p>
-                  I design and build immersive sets for film and live events,
-                  create world-building illustrations, paint in oils, render
-                  photorealistic interiors in Rhino and Enscape, and design
-                  album artwork and packaging.
+                  I design immersive sets for film and live events, paint in
+                  oils, build 3D models and create photorealistic interior
+                  renderings in Rhino and Enscape, develop characters and
+                  environments for visual storytelling, and design album
+                  artwork and editorial pieces.
                 </p>
                 <p>
-                  I make my own textures, build custom 3D models, and can take
-                  a project from first sketch to finished piece. Whether
-                  it&apos;s a film set, an oil painting, or a brand identity,
-                  I bring the same eye for detail and storytelling.
+                  I bring the same eye for detail and storytelling to every
+                  medium I work in.
                 </p>
               </div>
             </motion.div>
@@ -151,47 +165,6 @@ export default function AboutPage() {
                     <span className="text-xs text-[var(--color-charcoal)]/40 uppercase tracking-wider">
                       {film.type}
                     </span>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Experience */}
-          <motion.div
-            className="mb-24"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="font-[family-name:var(--font-instrument-serif)] text-4xl italic text-[var(--color-charcoal)] mb-12">
-              Experience
-            </h2>
-            <div className="space-y-0">
-              {experience.map((exp, i) => (
-                <motion.div
-                  key={exp.company}
-                  className="py-8 border-b border-[var(--color-charcoal)]/10 grid md:grid-cols-3 gap-4"
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                >
-                  <div>
-                    <p className="text-xs uppercase tracking-widest text-[var(--color-charcoal)]/40 mb-1">
-                      {exp.period}
-                    </p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <h3 className="font-[family-name:var(--font-instrument-serif)] text-xl italic text-[var(--color-charcoal)] mb-1">
-                      {exp.role}
-                    </h3>
-                    <p className="text-sm text-[var(--color-coral)] mb-2">
-                      {exp.company}
-                    </p>
-                    <p className="text-sm text-[var(--color-charcoal)]/50 leading-relaxed">
-                      {exp.description}
-                    </p>
                   </div>
                 </motion.div>
               ))}

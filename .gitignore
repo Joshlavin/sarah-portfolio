@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# image backup from migration (kept locally, not in repo)
+/public/images/projects.old/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

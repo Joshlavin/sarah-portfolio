@@ -36,47 +36,6 @@ export default function ProjectCard({ project, index }: { project: Project; inde
             </div>
           )}
 
-          {/* Scribble circle on hover */}
-          <svg
-            className="absolute inset-0 w-full h-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            viewBox="0 0 400 300"
-            preserveAspectRatio="none"
-          >
-            <ellipse
-              cx="200"
-              cy="150"
-              rx="180"
-              ry="130"
-              fill="none"
-              stroke="white"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeDasharray="800"
-              strokeDashoffset="800"
-              className="group-hover:animate-[scribbleIn_0.6s_ease-out_forwards]"
-              style={{
-                filter: "url(#roughHover)",
-              }}
-            />
-            <defs>
-              <filter id="roughHover">
-                <feTurbulence
-                  type="turbulence"
-                  baseFrequency="0.03"
-                  numOctaves="2"
-                  result="turbulence"
-                />
-                <feDisplacementMap
-                  in="SourceGraphic"
-                  in2="turbulence"
-                  scale="4"
-                  xChannelSelector="R"
-                  yChannelSelector="G"
-                />
-              </filter>
-            </defs>
-          </svg>
-
           {/* Hover overlay */}
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
         </div>

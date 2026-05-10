@@ -10,7 +10,7 @@ export default function CTASection() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/projects/the-bonsai/forest-1.jpg"
+          src="/images/projects/the-bonsai/stills/the-bonsai-stills-01.jpg"
           alt=""
           fill
           sizes="100vw"

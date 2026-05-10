@@ -52,9 +52,9 @@ const skills = [
     ),
   },
   {
-    title: "3D & Rendering",
+    title: "3D Visualization",
     description: "Custom 3D models in Rhino with photorealistic renders in Enscape.",
-    link: "/work/category/3d-rendering",
+    link: "/work/category/3d-visualization",
     color: "#CBE6C7",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">

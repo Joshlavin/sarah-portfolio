@@ -6,7 +6,7 @@ import Link from "next/link";
 import SectionColorWash from "@/components/SectionColorWash";
 import { projects } from "@/data/projects";
 
-const featuredSlugs = ["the-bonsai", "lost-city-of-zeloria", "kissinger-takes-paris", "oil-paintings", "interior-renderings"];
+const featuredSlugs = ["wake-up-dead-man", "the-bonsai", "frankenstein", "luxury-add-on", "oil-paintings"];
 
 export default function FeaturedProjects() {
   const featured = projects.filter((p) => featuredSlugs.includes(p.slug));
@@ -33,7 +33,16 @@ export default function FeaturedProjects() {
             <motion.div className="mb-8" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <Link href={`/work/${heroProject.slug}`} className="group block relative">
                 <div className="relative aspect-[21/9] rounded-2xl overflow-hidden" style={{ backgroundColor: heroProject.color }}>
-                  {heroProject.images && heroProject.images.length > 0 ? (
+                  {heroProject.thumbnail ? (
+                    <Image
+                      src={heroProject.thumbnail}
+                      alt={heroProject.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 1280px"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      priority
+                    />
+                  ) : heroProject.images && heroProject.images.length > 0 ? (
                     <Image
                       src={heroProject.images[0]}
                       alt={heroProject.title}

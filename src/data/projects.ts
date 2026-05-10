@@ -486,7 +486,7 @@ export const projects: Project[] = [
     title: "Inside Out",
     category: "Production Design",
     description:
-      "A self-initiated design study reimagining the world of Pixar's Inside Out for live action — building out Disgust's set environment, palette, materials, plans, and key art.",
+      "A self-initiated design study reimagining the world of Pixar's Inside Out for live action — environment design, palette, materials, plans, and key art.",
     thumbnail: "/images/projects/inside-out/inside-out-01.jpg",
     color: "#7A9B4C",
     type: "Personal Design Study",
@@ -504,7 +504,7 @@ export const projects: Project[] = [
       "/images/projects/inside-out/inside-out-10.jpg",
     ],
     details:
-      "A personal production design exercise exploring how the emotional landscape of Pixar's Inside Out might translate to a physical set. Focused on Disgust as a character world — palette, materials, plan layouts, and director's mood references. Created independently as a portfolio piece.",
+      "A personal production design exercise exploring how the emotional landscape of Pixar's Inside Out might translate to a physical set. Focused on environment design — palette, materials, plan layouts, and director's mood references. Created independently as a portfolio piece.",
   },
   {
     slug: "fam",

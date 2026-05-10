@@ -611,7 +611,7 @@ export const projects: Project[] = [
       "/images/projects/industry-set-design/industry-set-design-06.jpg",
     ],
     details:
-      "Independent contractor work for Joel Pelletier Co. (JPC). Deliverables include desk and lamp design comps for AMW, table layouts for TMZ, set treatment for iHeart × The Lumineers, furniture studies for Real Housewives of Beverly Hills, and original mood boards.",
+      "Independent contractor work spanning TV broadcast and live events. Deliverables include desk and lamp design comps for AMW, table layouts for TMZ, set treatment for iHeart × The Lumineers, furniture studies for Real Housewives of Beverly Hills, and original mood boards.",
   },
 
   // ─── VISUAL DEVELOPMENT ───

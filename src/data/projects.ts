@@ -486,10 +486,10 @@ export const projects: Project[] = [
     title: "Inside Out",
     category: "Production Design",
     description:
-      "Conceptual production design for Inside Out — Disgust's set environment, palette, materials, plans, and key art.",
+      "A self-initiated design study reimagining the world of Pixar's Inside Out for live action — building out Disgust's set environment, palette, materials, plans, and key art.",
     thumbnail: "/images/projects/inside-out/inside-out-01.jpg",
     color: "#7A9B4C",
-    type: "Conceptual Study",
+    type: "Personal Design Study",
     tools: ["SketchUp", "Photoshop", "Procreate"],
     images: [
       "/images/projects/inside-out/inside-out-01.jpg",
@@ -504,7 +504,7 @@ export const projects: Project[] = [
       "/images/projects/inside-out/inside-out-10.jpg",
     ],
     details:
-      "A conceptual production design study for Inside Out. The set treatment focused on Disgust's environment — palette, materials, and plan layouts. Includes director plans, mood references, and key visual treatments.",
+      "A personal production design exercise exploring how the emotional landscape of Pixar's Inside Out might translate to a physical set. Focused on Disgust as a character world — palette, materials, plan layouts, and director's mood references. Created independently as a portfolio piece.",
   },
   {
     slug: "fam",
@@ -535,10 +535,10 @@ export const projects: Project[] = [
     title: "The Taylor Swift Show",
     category: "Production Design",
     description:
-      "Live concert production design study. Stage layouts, stylized renders, and visual treatment.",
+      "A self-initiated concert design study imagining the staging for a Taylor Swift live show — stage layouts, stylized renders, and visual treatment.",
     thumbnail: "/images/projects/taylor-swift-show/taylor-swift-show-02.jpg",
     color: "#C53D8B",
-    type: "Conceptual Study",
+    type: "Personal Design Study",
     tools: ["Rhino", "Enscape", "Photoshop"],
     images: [
       "/images/projects/taylor-swift-show/taylor-swift-show-01.jpg",

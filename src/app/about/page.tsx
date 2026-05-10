@@ -88,21 +88,24 @@ export default function AboutPage() {
               </h1>
               <div className="space-y-4 text-lg text-[var(--color-charcoal)]/60 font-light leading-relaxed">
                 <p>
-                  I&apos;m a designer and visual artist based in Los Angeles
-                  with experience across many art fields — production design,
-                  visual development, fine art, 3D visualization, photography,
-                  and graphic design.
+                  I&apos;m a Los Angeles–based designer and visual artist
+                  bouncing between film sets, 3D worlds, paintings, and
+                  whatever medium lets me tell the story best.
                 </p>
                 <p>
-                  I design immersive sets for film and live events, paint in
-                  oils, build 3D models and create photorealistic interior
-                  renderings in Rhino and Enscape, develop characters and
-                  environments for visual storytelling, and design album
-                  artwork and editorial pieces.
+                  My work spans production design, visual development, fine
+                  art, 3D visualization, photography, and graphic design. I
+                  design immersive environments for film and live events,
+                  create photorealistic interior renderings in Rhino and
+                  Enscape, paint in oils, develop stylized characters and
+                  worlds, and design everything from album artwork to
+                  promotional and print materials.
                 </p>
                 <p>
-                  I bring the same eye for detail and storytelling to every
-                  medium I work in.
+                  No matter the medium, I&apos;m drawn to projects that
+                  blend atmosphere, storytelling, and strong visual identity,
+                  and I&apos;m usually sketching ideas somewhere between
+                  deadlines, dog walks, and an iced vanilla latte.
                 </p>
               </div>
             </motion.div>

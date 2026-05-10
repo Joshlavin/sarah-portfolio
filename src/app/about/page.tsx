@@ -6,24 +6,6 @@ import SectionColorWash from "@/components/SectionColorWash";
 
 const filmography = [
   {
-    title: "Wake Up Dead Man: A Knives Out Mystery",
-    role: "Production Designer",
-    type: "Premiere Event",
-    year: "2025",
-  },
-  {
-    title: "Frankenstein",
-    role: "Production Designer",
-    type: "Premiere Event",
-    year: "2025",
-  },
-  {
-    title: "Happy Gilmore 2",
-    role: "Production Designer",
-    type: "Premiere Event",
-    year: "2025",
-  },
-  {
     title: "Double Time",
     role: "Production Designer",
     type: "Short Film",

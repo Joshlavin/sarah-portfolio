@@ -1037,23 +1037,8 @@ export const projects: Project[] = [
       "/images/projects/album-artwork/album-artwork-02.jpg",
       "/images/projects/album-artwork/album-artwork-03.jpg",
       "/images/projects/album-artwork/album-artwork-04.png",
-    ],
-  },
-  {
-    slug: "jazz-flyers",
-    title: "Jazz Festival Flyer Series",
-    category: "Graphic Design",
-    description:
-      "A three-flyer series for a jazz festival. Composition, typography, and color treatment.",
-    thumbnail: "/images/projects/jazz-flyers/jazz-flyers-01.jpg",
-    color: "#A85C2C",
-    year: "2022",
-    type: "Flyer Series",
-    tools: ["Illustrator", "Photoshop"],
-    images: [
-      "/images/projects/jazz-flyers/jazz-flyers-01.jpg",
-      "/images/projects/jazz-flyers/jazz-flyers-02.jpg",
-      "/images/projects/jazz-flyers/jazz-flyers-03.jpg",
+      "/images/projects/album-artwork/album-artwork-05.jpg",
+      "/images/projects/album-artwork/album-artwork-06.jpg",
     ],
   },
   {
@@ -1071,8 +1056,6 @@ export const projects: Project[] = [
       "/images/projects/logos/logos-02.png",
       "/images/projects/logos/logos-03.png",
       "/images/projects/logos/logos-04.png",
-      "/images/projects/logos/logos-05.jpg",
-      "/images/projects/logos/logos-06.jpg",
     ],
   },
 ];

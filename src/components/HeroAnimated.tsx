@@ -130,7 +130,7 @@ function TypingDiscipline() {
 // ROW 1 — production design + paintings (warm, story-rich)
 const ROW1 = [
   "/images/projects/the-bonsai/stills/the-bonsai-stills-01.jpg",
-  "/images/projects/back-to-me/set-photos/back-to-me-set-photos-01.jpg",
+  "/images/projects/wake-up-dead-man/wake-up-dead-man-11.jpg",
   "/images/projects/oil-paintings/oil-paintings-01.jpg",
   "/images/projects/inside-out/inside-out-01.jpg",
   "/images/projects/happy-gilmore-2/happy-gilmore-2-01.jpg",

@@ -141,7 +141,7 @@ const ROW1 = [
 const ROW2 = [
   "/images/projects/lost-city-of-zeloria/lost-city-of-zeloria-01.jpg",
   "/images/projects/people-portrait/people-portrait-01.jpg",
-  "/images/projects/luxury-add-on/luxury-add-on-06.jpg",
+  "/images/projects/luxury-add-on/luxury-add-on-10.jpg",
   "/images/projects/environments/environments-02.jpg",
   "/images/projects/oil-paintings/oil-paintings-05.jpg",
   "/images/projects/album-artwork/album-artwork-01.jpg",

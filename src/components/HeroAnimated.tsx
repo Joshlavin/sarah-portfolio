@@ -283,7 +283,7 @@ export default function HeroAnimated() {
               See My Work
             </Link>
             <Link href="/contact" className="px-6 md:px-8 py-3 md:py-3.5 border-2 border-[var(--color-indigo)] text-[var(--color-indigo)] rounded-full text-sm tracking-wider font-medium hover:bg-[var(--color-indigo)] hover:text-white transition-colors">
-              Say Hello
+              Say Hi
             </Link>
           </motion.div>
         </div>

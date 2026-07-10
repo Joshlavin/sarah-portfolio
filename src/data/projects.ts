@@ -864,7 +864,7 @@ export const projects: Project[] = [
     category: "Photography",
     description:
       "Portraits, product, and editorial photography — light, expression, texture, and moments.",
-    thumbnail: "/images/projects/people-portrait/people-portrait-01.jpg",
+    thumbnail: "/images/projects/editorial-photography/editorial-photography-03.jpg",
     color: "#F5C842",
     tools: ["Canon", "Lightroom", "Photoshop"],
     sections: [

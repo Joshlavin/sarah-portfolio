@@ -43,7 +43,7 @@ export default function Footer() {
                   Email
                 </a>
                 <a
-                  href="https://www.instagram.com/sarahrlavinart/"
+                  href="https://www.instagram.com/sarahlavin.creative/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm hover:text-[var(--color-coral)] transition-colors"

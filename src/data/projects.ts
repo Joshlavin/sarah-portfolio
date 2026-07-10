@@ -236,7 +236,6 @@ export const projects: Project[] = [
           "/images/projects/happy-gilmore-2/happy-gilmore-2-02.jpg",
           "/images/projects/happy-gilmore-2/happy-gilmore-2-03.jpg",
           "/images/projects/happy-gilmore-2/happy-gilmore-2-04.jpg",
-          "/images/projects/happy-gilmore-2/happy-gilmore-2-06.jpg",
         ],
       },
       {
@@ -253,6 +252,12 @@ export const projects: Project[] = [
           "/images/projects/happy-gilmore-2/happy-gilmore-2-09.jpg",
           "/images/projects/happy-gilmore-2/happy-gilmore-2-10.jpg",
           "/images/projects/happy-gilmore-2/happy-gilmore-2-11.jpg",
+        ],
+      },
+      {
+        label: "Drafting",
+        images: [
+          "/images/projects/happy-gilmore-2/happy-gilmore-2-06.jpg",
         ],
       },
     ],
@@ -598,26 +603,98 @@ export const projects: Project[] = [
     ],
   },
 
+  // ─── APPLE TV+ EMMY HOUSE (2025) ───
+  {
+    slug: "apple-tv-emmy-house",
+    title: "Apple TV+ Emmy House",
+    category: "Production Design",
+    description:
+      "Immersive FYC event sets for Apple TV+'s 2025 Emmy campaign — environments for Emmy-eligible shows with interactive elements, from build drawing through installation.",
+    thumbnail: "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-02.png",
+    color: "#1D1D1F",
+    year: "2025",
+    type: "FYC Event",
+    studio: "Benarroch Productions",
+    tools: ["Rhino", "Enscape", "Photoshop", "Illustrator"],
+    sections: [
+      {
+        label: "Shrinking",
+        images: [
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-02.png",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-01.jpg",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-shrinking-plan-1.png",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-shrinking-bench-elevations-1.png",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-07.png",
+        ],
+      },
+      {
+        label: "Your Friends & Neighbors",
+        images: [
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-04.png",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-03.jpg",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-yfn-plan-1.png",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-yfn-build-1.png",
+        ],
+      },
+      {
+        label: "The Studio",
+        images: [
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-the-studio-screening-room.jpg",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-the-studio-guests.jpg",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-the-studio-plan-1.png",
+        ],
+      },
+      {
+        label: "Severance",
+        images: [
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-severance-entrance.jpg",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-severance-office.jpg",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-severance-lounge.jpg",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-severance-lounge-2.jpg",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-severance-lounge-3.jpg",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-severance-plan-1.png",
+        ],
+      },
+      {
+        label: "Step and Repeat",
+        images: [
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-05.png",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-06.png",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-venetian-room-elevations-1.png",
+        ],
+      },
+      {
+        label: "Venue",
+        images: [
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-venue-exterior.jpg",
+          "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-venue-site-plan-1.png",
+        ],
+      },
+    ],
+    details:
+      "Production design for Apple TV+'s FYC Emmy House at the Hollywood Athletic Club (April 24 – May 21, 2025). Designed themed environments for five series — a Cajun Cruiser food truck vignette for Shrinking, a laser-grid luxury closet for Your Friends & Neighbors, plus spaces for Severance, The Studio, and Dope Thief. Scope spanned the venue site plan, line plans, interior elevations, and build drawings through renderings, custom graphics, and final on-site installation.",
+  },
+
   // ─── PRODUCTION DESIGN — INDUSTRY (TV / Events) ───
   {
-    slug: "industry-set-design",
-    title: "Industry Set Design",
+    slug: "studio-connelly-contract-work",
+    title: "Studio Connelly Contract Work",
     category: "Production Design",
     description:
       "Set decoration and event design as an independent contractor — Real Housewives of Beverly Hills, iHeart × The Lumineers, America's Most Wanted, and TMZ.",
-    thumbnail: "/images/projects/industry-set-design/industry-set-design-03.jpg",
+    thumbnail: "/images/projects/studio-connelly-contract-work/studio-connelly-contract-work-03.jpg",
     color: "#A85C2C",
     year: "2025",
     type: "TV / Event Set Design",
     studio: "Studio Connelly",
     tools: ["SketchUp", "Photoshop", "Set decoration"],
     images: [
-      "/images/projects/industry-set-design/industry-set-design-01.jpg",
-      "/images/projects/industry-set-design/industry-set-design-02.png",
-      "/images/projects/industry-set-design/industry-set-design-03.jpg",
-      "/images/projects/industry-set-design/industry-set-design-04.jpg",
-      "/images/projects/industry-set-design/industry-set-design-05.jpg",
-      "/images/projects/industry-set-design/industry-set-design-06.jpg",
+      "/images/projects/studio-connelly-contract-work/studio-connelly-contract-work-01.jpg",
+      "/images/projects/studio-connelly-contract-work/studio-connelly-contract-work-02.png",
+      "/images/projects/studio-connelly-contract-work/studio-connelly-contract-work-03.jpg",
+      "/images/projects/studio-connelly-contract-work/studio-connelly-contract-work-04.jpg",
+      "/images/projects/studio-connelly-contract-work/studio-connelly-contract-work-05.jpg",
+      "/images/projects/studio-connelly-contract-work/studio-connelly-contract-work-06.jpg",
     ],
     details:
       "Independent contractor work spanning TV broadcast and live events. Deliverables include desk and lamp design comps for AMW, table layouts for TMZ, set treatment for iHeart × The Lumineers, furniture studies for Real Housewives of Beverly Hills, and original mood boards.",

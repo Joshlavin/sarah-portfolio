@@ -11,8 +11,8 @@ const socials = [
   },
   {
     label: "Instagram",
-    value: "@sarahrlavinart",
-    href: "https://www.instagram.com/sarahrlavinart/",
+    value: "@sarahlavin.creative",
+    href: "https://www.instagram.com/sarahlavin.creative/",
   },
   {
     label: "Sketchbook",

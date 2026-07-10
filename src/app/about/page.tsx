@@ -6,6 +6,12 @@ import SectionColorWash from "@/components/SectionColorWash";
 
 const filmography = [
   {
+    title: "Lies We Follow",
+    role: "Graphic Designer & Art Dept PA",
+    type: "Feature Film",
+    year: "2026",
+  },
+  {
     title: "Double Time",
     role: "Production Designer",
     type: "Short Film",

@@ -140,7 +140,7 @@ const ROW1 = [
 // ROW 2 — visdev + photography + 3D (cool, atmospheric)
 const ROW2 = [
   "/images/projects/lost-city-of-zeloria/lost-city-of-zeloria-01.jpg",
-  "/images/projects/people-portrait/people-portrait-01.jpg",
+  "/images/projects/editorial-photography/editorial-photography-03.jpg",
   "/images/projects/luxury-add-on/luxury-add-on-10.jpg",
   "/images/projects/environments/environments-02.jpg",
   "/images/projects/oil-paintings/oil-paintings-05.jpg",

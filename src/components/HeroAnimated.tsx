@@ -137,10 +137,10 @@ const ROW1 = [
   "/images/projects/all-summer-in-a-day/all-summer-in-a-day-01.jpg",
 ];
 
-// ROW 2 — visdev + photography + 3D (cool, atmospheric)
+// ROW 2 — visdev + production design + 3D (cool, atmospheric)
 const ROW2 = [
   "/images/projects/lost-city-of-zeloria/lost-city-of-zeloria-01.jpg",
-  "/images/projects/editorial-photography/editorial-photography-03.jpg",
+  "/images/projects/frankenstein/premiere-event/frankenstein-premiere-event-01.jpg",
   "/images/projects/luxury-add-on/luxury-add-on-10.jpg",
   "/images/projects/environments/environments-02.jpg",
   "/images/projects/oil-paintings/oil-paintings-05.jpg",

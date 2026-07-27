@@ -65,20 +65,6 @@ const skills = [
     ),
   },
   {
-    title: "Photography",
-    description: "Portraits, events, and documentary work through a thoughtful lens.",
-    link: "/work/category/photography",
-    color: "#28536B",
-    icon: (
-      <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
-        <rect x="4" y="10" width="32" height="24" rx="3" stroke="currentColor" strokeWidth="2" />
-        <circle cx="20" cy="22" r="7" stroke="currentColor" strokeWidth="2" />
-        <circle cx="20" cy="22" r="3" fill="currentColor" />
-        <rect x="14" y="6" width="12" height="4" rx="1" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
-  },
-  {
     title: "Graphic Design",
     description: "Album artwork, packaging, promotional materials, and brand collateral.",
     link: "/work/category/graphic-design",

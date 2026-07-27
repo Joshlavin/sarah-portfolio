@@ -4,7 +4,6 @@ export type Category =
   | "Conceptual Production Design"
   | "Fine Art"
   | "3D Visualization"
-  | "Photography"
   | "Graphic Design";
 
 export interface ComparePair {
@@ -43,7 +42,6 @@ export const categories: Category[] = [
   "Conceptual Production Design",
   "Fine Art",
   "3D Visualization",
-  "Photography",
   "Graphic Design",
 ];
 
@@ -53,7 +51,6 @@ export const categoryColors: Record<Category, string> = {
   "Conceptual Production Design": "#9B7EBD",
   "Fine Art": "#F2B8C6",
   "3D Visualization": "#4CB963",
-  Photography: "#F5C842",
   "Graphic Design": "#C5D5B0",
 };
 
@@ -94,12 +91,6 @@ export const categoryMeta: CategoryMeta[] = [
     name: "3D Visualization",
     tagline: "Custom 3D models and photorealistic renders in Rhino and Enscape.",
     heroImage: "/images/projects/luxury-add-on/luxury-add-on-01.jpg",
-  },
-  {
-    slug: "photography",
-    name: "Photography",
-    tagline: "Capturing moments, textures, and stories through a thoughtful lens.",
-    heroImage: "/images/projects/people-portrait/people-portrait-01.jpg",
   },
   {
     slug: "graphic-design",
@@ -855,82 +846,6 @@ export const projects: Project[] = [
       "/images/projects/dc-apartment/dc-apartment-03.jpg",
       "/images/projects/dc-apartment/dc-apartment-04.jpg",
       "/images/projects/dc-apartment/dc-apartment-05.jpg",
-    ],
-  },
-  // ─── PHOTOGRAPHY ───
-  {
-    slug: "photography",
-    title: "Photography",
-    category: "Photography",
-    description:
-      "Portraits, product, and editorial photography — light, expression, texture, and moments.",
-    thumbnail: "/images/projects/editorial-photography/editorial-photography-03.jpg",
-    color: "#F5C842",
-    tools: ["Canon", "Lightroom", "Photoshop"],
-    sections: [
-      {
-        label: "People & Portrait",
-        images: [
-          "/images/projects/people-portrait/people-portrait-01.jpg",
-          "/images/projects/people-portrait/people-portrait-02.jpg",
-          "/images/projects/people-portrait/people-portrait-03.jpg",
-          "/images/projects/people-portrait/people-portrait-04.jpg",
-          "/images/projects/people-portrait/people-portrait-05.jpg",
-          "/images/projects/people-portrait/people-portrait-06.jpg",
-          "/images/projects/people-portrait/people-portrait-07.jpg",
-          "/images/projects/people-portrait/people-portrait-08.jpg",
-          "/images/projects/people-portrait/people-portrait-09.jpg",
-          "/images/projects/people-portrait/people-portrait-10.jpg",
-          "/images/projects/people-portrait/people-portrait-11.jpg",
-          "/images/projects/people-portrait/people-portrait-12.jpg",
-          "/images/projects/people-portrait/people-portrait-13.jpg",
-          "/images/projects/people-portrait/people-portrait-14.jpg",
-          "/images/projects/people-portrait/people-portrait-15.jpg",
-          "/images/projects/people-portrait/people-portrait-16.jpg",
-          "/images/projects/people-portrait/people-portrait-17.jpg",
-          "/images/projects/people-portrait/people-portrait-18.jpg",
-          "/images/projects/people-portrait/people-portrait-19.jpg",
-          "/images/projects/people-portrait/people-portrait-20.jpg",
-        ],
-      },
-      {
-        label: "Product",
-        images: [
-          "/images/projects/product-photography/product-photography-01.jpg",
-          "/images/projects/product-photography/product-photography-02.jpg",
-          "/images/projects/product-photography/product-photography-03.jpg",
-          "/images/projects/product-photography/product-photography-04.jpg",
-          "/images/projects/product-photography/product-photography-05.jpg",
-          "/images/projects/product-photography/product-photography-06.jpg",
-          "/images/projects/product-photography/product-photography-07.jpg",
-          "/images/projects/product-photography/product-photography-08.jpg",
-          "/images/projects/product-photography/product-photography-09.jpg",
-          "/images/projects/product-photography/product-photography-10.jpg",
-        ],
-      },
-      {
-        label: "Editorial",
-        images: [
-          "/images/projects/editorial-photography/editorial-photography-01.jpg",
-          "/images/projects/editorial-photography/editorial-photography-02.jpg",
-          "/images/projects/editorial-photography/editorial-photography-03.jpg",
-          "/images/projects/editorial-photography/editorial-photography-04.jpg",
-          "/images/projects/editorial-photography/editorial-photography-05.jpg",
-          "/images/projects/editorial-photography/editorial-photography-06.jpg",
-          "/images/projects/editorial-photography/editorial-photography-07.jpg",
-          "/images/projects/editorial-photography/editorial-photography-08.jpg",
-          "/images/projects/editorial-photography/editorial-photography-09.jpg",
-          "/images/projects/editorial-photography/editorial-photography-10.jpg",
-          "/images/projects/editorial-photography/editorial-photography-11.jpg",
-          "/images/projects/editorial-photography/editorial-photography-12.jpg",
-          "/images/projects/editorial-photography/editorial-photography-13.jpg",
-          "/images/projects/editorial-photography/editorial-photography-14.jpg",
-          "/images/projects/editorial-photography/editorial-photography-15.jpg",
-          "/images/projects/editorial-photography/editorial-photography-16.jpg",
-          "/images/projects/editorial-photography/editorial-photography-17.jpg",
-          "/images/projects/editorial-photography/editorial-photography-18.jpg",
-        ],
-      },
     ],
   },
   // ─── GRAPHIC DESIGN ───

@@ -7,21 +7,7 @@ import SectionColorWash from "@/components/SectionColorWash";
 
 const skills = [
   {
-    title: "Fine Art",
-    description: "Oil paintings, drawings, and explorations in color, light, and form.",
-    link: "/work/category/fine-art",
-    color: "#28536B",
-    icon: (
-      <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
-        <path d="M20 4C13 4 6 10 6 20C6 26 10 30 16 30C18 30 19 29 19 27C19 26 18.5 25.5 18 25C17.5 24.5 17 24 17 23C17 21 19 19 21 19H24C30.6 19 36 13.6 36 7C36 5 34 4 20 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-        <circle cx="13" cy="14" r="2.5" fill="currentColor" />
-        <circle cx="20" cy="10" r="2.5" fill="currentColor" />
-        <circle cx="27" cy="12" r="2.5" fill="currentColor" />
-      </svg>
-    ),
-  },
-  {
-    title: "Production Design",
+    title: "Production Designer",
     description: "From sketch to set. Film sets, events, and immersive spaces built from the ground up.",
     link: "/work/category/production-design",
     color: "#8FB78F",
@@ -36,7 +22,7 @@ const skills = [
     ),
   },
   {
-    title: "Visual Development",
+    title: "Vis Dev Artist",
     description: "World-building, environment design, and visual storytelling for film and animation.",
     link: "/work/category/visual-development",
     color: "#B4CCCF",
@@ -52,23 +38,10 @@ const skills = [
     ),
   },
   {
-    title: "3D Visualization",
-    description: "Custom 3D models in Rhino with photorealistic renders in Enscape.",
-    link: "/work/category/3d-visualization",
-    color: "#CBE6C7",
-    icon: (
-      <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
-        <path d="M20 4L36 14V28L20 38L4 28V14L20 4Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
-        <path d="M20 4L20 38" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M4 14L20 24L36 14" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
-  },
-  {
-    title: "Graphic Design",
-    description: "Album artwork, packaging, promotional materials, and brand collateral.",
+    title: "Brand Builder",
+    description: "Logos, album artwork, packaging, and visual identities with a strong point of view.",
     link: "/work/category/graphic-design",
-    color: "#8FB78F",
+    color: "#28536B",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
         <rect x="6" y="4" width="22" height="32" rx="2" stroke="currentColor" strokeWidth="2" />
@@ -99,15 +72,13 @@ export default function CapabilitiesSection() {
             </h2>
           </motion.div>
 
-          {/* Bento-ish layout: 2 big + 4 small */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[180px]">
+          {/* 3 equal cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[200px]">
             {skills.map((skill, i) => {
-              // First two span 2 cols each on desktop
-              const isLarge = i < 2;
               return (
                 <motion.div
                   key={skill.title}
-                  className={isLarge ? "col-span-2" : "col-span-1 sm:col-span-1"}
+                  className="col-span-1"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}

@@ -100,7 +100,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   My work spans production design, visual development, fine
-                  art, 3D visualization, photography, and graphic design. I
+                  art, 3D visualization, and graphic design. I
                   design immersive environments for film and live events,
                   create photorealistic interior renderings in Rhino and
                   Enscape, paint in oils, develop stylized characters and

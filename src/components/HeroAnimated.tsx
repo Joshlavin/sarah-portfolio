@@ -137,6 +137,7 @@ const ROW1 = [
 
 // ROW 2 — visdev + production design + 3D (cool, atmospheric)
 const ROW2 = [
+  "/images/projects/apple-tv-century-city/renderings/apple-tv-century-city-render-01.jpg",
   "/images/projects/lost-city-of-zeloria/lost-city-of-zeloria-01.jpg",
   "/images/projects/frankenstein/premiere-event/frankenstein-premiere-event-01.jpg",
   "/images/projects/luxury-add-on/luxury-add-on-10.jpg",

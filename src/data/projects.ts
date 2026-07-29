@@ -108,6 +108,66 @@ export const categoryMeta: CategoryMeta[] = [
 export const projects: Project[] = [
   // ─── PRODUCTION DESIGN — BENARROCH PRODUCTIONS ───
   {
+    slug: "apple-tv-century-city",
+    title: "Apple TV Century City Mall Pop Up",
+    category: "Production Design",
+    description:
+      "An immersive Apple TV pop-up in the Westfield Century City atrium. Modeled and textured the full mall atrium in 3D for design visualization, and produced build drawings, cut files, and printed graphics across the activation.",
+    thumbnail: "/images/projects/apple-tv-century-city/renderings/apple-tv-century-city-render-01.jpg",
+    color: "#1D1D1F",
+    year: "2026",
+    type: "Brand Activation",
+    studio: "Benarroch Productions",
+    tools: ["Rhino", "Enscape", "Illustrator", "Photoshop"],
+    sections: [
+      {
+        label: "Walkthrough",
+        images: ["/images/projects/apple-tv-century-city/video/apple-tv-century-city-walkthrough-01.mp4"],
+      },
+      {
+        label: "Event Photos",
+        images: [
+          "/images/projects/apple-tv-century-city/event-photos/apple-tv-century-city-event-04.jpg",
+          "/images/projects/apple-tv-century-city/event-photos/apple-tv-century-city-event-01.jpg",
+          "/images/projects/apple-tv-century-city/event-photos/apple-tv-century-city-event-02.jpg",
+          "/images/projects/apple-tv-century-city/event-photos/apple-tv-century-city-event-03.jpg",
+        ],
+      },
+      {
+        label: "Renderings",
+        images: [
+          "/images/projects/apple-tv-century-city/renderings/apple-tv-century-city-render-01.jpg",
+          "/images/projects/apple-tv-century-city/renderings/apple-tv-century-city-render-02.jpg",
+          "/images/projects/apple-tv-century-city/renderings/apple-tv-century-city-render-03.jpg",
+          "/images/projects/apple-tv-century-city/renderings/apple-tv-century-city-render-04.jpg",
+        ],
+      },
+      {
+        label: "Graphics & Cut Files",
+        images: [
+          "/images/projects/apple-tv-century-city/graphics/apple-tv-century-city-graphics-01.png",
+          "/images/projects/apple-tv-century-city/graphics/apple-tv-century-city-graphics-02.png",
+          "/images/projects/apple-tv-century-city/graphics/apple-tv-century-city-graphics-03.png",
+        ],
+      },
+      {
+        label: "Build Drawings",
+        images: [
+          "/images/projects/apple-tv-century-city/drawings/apple-tv-century-city-drawing-01.jpg",
+          "/images/projects/apple-tv-century-city/drawings/apple-tv-century-city-drawing-02.jpg",
+          "/images/projects/apple-tv-century-city/drawings/apple-tv-century-city-drawing-03.jpg",
+          "/images/projects/apple-tv-century-city/drawings/apple-tv-century-city-drawing-04.jpg",
+          "/images/projects/apple-tv-century-city/drawings/apple-tv-century-city-drawing-05.jpg",
+          "/images/projects/apple-tv-century-city/drawings/apple-tv-century-city-drawing-06.jpg",
+          "/images/projects/apple-tv-century-city/drawings/apple-tv-century-city-drawing-07.jpg",
+          "/images/projects/apple-tv-century-city/drawings/apple-tv-century-city-drawing-08.jpg",
+        ],
+      },
+    ],
+    details:
+      "Production design for Apple TV's pop-up activation at Westfield Century City. Built and textured a complete 3D model of the mall atrium to visualize the pop-up in situ, from concept renders through an animated walkthrough. Also produced show-window build drawings, vinyl cut files, and printed graphics — including window displays for The Morning Show, Slow Horses, Shrinking, Pluribus, Imperfect Women, Your Friends & Neighbors, and Margo's Got Money Troubles.",
+  },
+  {
     slug: "wake-up-dead-man",
     title: "Wake Up Dead Man: A Knives Out Mystery",
     category: "Production Design",

@@ -75,10 +75,8 @@ function ProximityLetter({
 
 const DISCIPLINES = [
   { text: "Production Designer", color: "#28536B" },
-  { text: "Illustrator", color: "#8FB78F" },
-  { text: "Fine Artist", color: "#28536B" },
-  { text: "Visual Storyteller", color: "#8FB78F" },
-  { text: "3D Artist", color: "#28536B" },
+  { text: "Vis Dev Artist", color: "#8FB78F" },
+  { text: "Brand Builder", color: "#28536B" },
 ];
 
 function TypingDiscipline() {

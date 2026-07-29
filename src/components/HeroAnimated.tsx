@@ -139,10 +139,10 @@ const ROW1 = [
 const ROW2 = [
   "/images/projects/apple-tv-century-city/renderings/apple-tv-century-city-render-01.jpg",
   "/images/projects/lost-city-of-zeloria/lost-city-of-zeloria-01.jpg",
-  "/images/projects/frankenstein/premiere-event/frankenstein-premiere-event-01.jpg",
+  "/images/projects/frankenstein/premiere-event/frankenstein-premiere-event-03.jpg",
   "/images/projects/luxury-add-on/luxury-add-on-10.jpg",
   "/images/projects/environments/environments-02.jpg",
-  "/images/projects/oil-paintings/oil-paintings-05.jpg",
+  "/images/projects/victorian-house/studies/victorian-house-studies-01.jpg",
   "/images/projects/album-artwork/album-artwork-01.jpg",
 ];
 

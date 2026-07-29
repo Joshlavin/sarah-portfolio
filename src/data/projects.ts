@@ -212,7 +212,7 @@ export const projects: Project[] = [
     title: "Happy Gilmore 2",
     category: "Production Design",
     description:
-      "Designed a golf clubhouse locker room with branded cubbies, judges desk, custom paddles + caddy bibs, and a large-format printed backdrop for Netflix's Happy Gilmore 2 premiere.",
+      "Designed a golf clubhouse locker room with branded cubbies, judges' desk, custom paddles and caddy bibs, and a large-format printed backdrop for Netflix's Happy Gilmore 2 premiere.",
     thumbnail: "/images/projects/happy-gilmore-2/happy-gilmore-2-01.jpg",
     color: "#2E5A1C",
     year: "2025",
@@ -253,7 +253,7 @@ export const projects: Project[] = [
       },
     ],
     details:
-      "Production design for the Netflix premiere event of Happy Gilmore 2. Designed and executed a golf clubhouse locker room environment featuring branded cubbies with golf bags, trophies, and wardrobe elements. Also designed a commentator judges desk and large-format printed backdrop. 3D renders were created in Rhino and Enscape to visualize the space before build.",
+      "Production design for the Netflix premiere event of Happy Gilmore 2. Designed and executed a golf clubhouse locker room environment featuring branded cubbies with golf bags, trophies, and wardrobe elements. Also designed a commentator judges' desk and large-format printed backdrop. 3D renders were created in Rhino and Enscape to visualize the space before build.",
   },
   {
     slug: "apple-tv-emmy-house",
@@ -420,7 +420,7 @@ export const projects: Project[] = [
       },
     ],
     details:
-      "When a desperately needed box is delivered across the street from an agoraphobic woman, she must confront her verbally-abusive mother in order to leave the prison she's created for herself. Designed and built sets including a hand-carved foam dungeon, a detailed hoarder house interior, and a magical forest environment.",
+      "When a desperately needed box is delivered across the street from an agoraphobic woman, she must confront her verbally abusive mother in order to leave the prison she's created for herself. Designed and built sets including a hand-carved foam dungeon, a detailed hoarder house interior, and a magical forest environment.",
   },
   {
     slug: "back-to-me",

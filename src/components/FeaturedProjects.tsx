@@ -24,7 +24,7 @@ export default function FeaturedProjects() {
           <motion.div className="flex items-end justify-between mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div>
               <p className="text-sm uppercase tracking-[0.3em] text-[var(--color-charcoal)]/50 mb-3">Selected Work</p>
-              <h2 className="font-[family-name:var(--font-instrument-serif)] text-5xl md:text-6xl italic text-[var(--color-charcoal)]">Featured projects</h2>
+              <h2 className="font-[family-name:var(--font-instrument-serif)] text-5xl md:text-6xl italic text-[var(--color-charcoal)]">Featured Projects</h2>
             </div>
             <Link href="/work" className="hidden md:block text-sm text-[var(--color-charcoal)]/50 hover:text-[var(--color-coral)] transition-colors">View all &rarr;</Link>
           </motion.div>

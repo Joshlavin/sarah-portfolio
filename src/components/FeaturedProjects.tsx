@@ -6,7 +6,7 @@ import Link from "next/link";
 import SectionColorWash from "@/components/SectionColorWash";
 import { projects } from "@/data/projects";
 
-const featuredSlugs = ["wake-up-dead-man", "the-bonsai", "frankenstein", "luxury-add-on", "oil-paintings"];
+const featuredSlugs = ["wake-up-dead-man", "apple-tv-century-city", "the-bonsai", "frankenstein", "luxury-add-on"];
 
 export default function FeaturedProjects() {
   const featured = projects.filter((p) => featuredSlugs.includes(p.slug));

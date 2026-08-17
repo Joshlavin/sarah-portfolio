@@ -131,7 +131,7 @@ function TypingDiscipline() {
 const ROW1 = [
   "/images/projects/the-bonsai/stills/the-bonsai-stills-01.jpg",
   "/images/projects/wake-up-dead-man/wake-up-dead-man-11.jpg",
-  "/images/projects/oil-paintings/oil-paintings-01.jpg",
+  "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-severance-lounge.jpg",
   "/images/projects/inside-out/inside-out-01.jpg",
   "/images/projects/happy-gilmore-2/happy-gilmore-2-01.jpg",
   "/images/projects/all-summer-in-a-day/all-summer-in-a-day-01.jpg",
@@ -148,13 +148,13 @@ const ROW2 = [
   "/images/projects/album-artwork/album-artwork-01.jpg",
 ];
 
-// ROW 3 — high-impact mix (fine art, character, in-world graphics)
+// ROW 3 - built work: events, sets, renders
 const ROW3 = [
-  "/images/projects/quieting-the-noise/final-pieces/quieting-the-noise-final-pieces-01.jpg",
+  "/images/projects/apple-tv-century-city/event-photos/apple-tv-century-city-event-04.jpg",
   "/images/projects/back-to-me/stills/back-to-me-stills-04.jpg",
-  "/images/projects/character-design/character-design-01.jpg",
-  "/images/projects/sketchbook/sketchbook-01.jpg",
-  "/images/projects/acrylic-paintings/acrylic-paintings-01.jpg",
+  "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-the-studio-screening-room.jpg",
+  "/images/projects/wake-up-dead-man/wake-up-dead-man-01.jpg",
+  "/images/projects/luxury-add-on/luxury-add-on-07.jpg",
   "/images/projects/the-bonsai/stills/the-bonsai-stills-15.jpg",
 ];
 

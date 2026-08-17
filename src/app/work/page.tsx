@@ -30,10 +30,6 @@ export default function WorkPage() {
             <h1 className="font-[family-name:var(--font-instrument-serif)] text-6xl md:text-7xl italic text-[var(--color-charcoal)] mb-4">
               Work
             </h1>
-            <p className="text-lg text-[var(--color-charcoal)]/50 font-light mb-12">
-              {filtered.length} project{filtered.length !== 1 ? "s" : ""}
-              {activeFilter !== "Projects" ? ` in ${activeFilter}` : ""}
-            </p>
           </motion.div>
 
           {/* Filter pills */}

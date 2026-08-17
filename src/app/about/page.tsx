@@ -99,7 +99,7 @@ export default function AboutPage() {
                   whatever medium lets me tell the story best.
                 </p>
                 <p>
-                  I work across the art department — concept art and
+                  I work across the art department: concept art and
                   world-building, set design and drafting, in-world graphics,
                   and build drawings. On most projects I&apos;m doing all of
                   it: modeling and texturing a space in Rhino, rendering it in

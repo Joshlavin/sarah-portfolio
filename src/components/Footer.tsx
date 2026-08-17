@@ -13,7 +13,7 @@ export default function Footer() {
               Sarah Lavin
             </span>
             <p className="text-sm leading-relaxed">
-              Designer and visual artist based in Los Angeles. Currently available for film, events, and immersive experiences.
+              Art department designer based in Los Angeles. Concept through build for film, events, and immersive experiences.
             </p>
           </div>
 

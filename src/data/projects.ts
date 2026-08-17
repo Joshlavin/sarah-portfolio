@@ -928,23 +928,6 @@ export const projects: Project[] = [
       "/images/projects/album-artwork/album-artwork-06.jpg",
     ],
   },
-  {
-    slug: "logos",
-    title: "Logos & Brand Marks",
-    category: "Graphic Design",
-    description:
-      "Logos and brand identity work — TCFI, ADC, Drawmylifeout, and other studies.",
-    thumbnail: "/images/projects/logos/logos-01.png",
-    color: "#B0C5A0",
-    type: "Brand Marks",
-    tools: ["Illustrator", "Photoshop", "Procreate"],
-    images: [
-      "/images/projects/logos/logos-01.png",
-      "/images/projects/logos/logos-02.png",
-      "/images/projects/logos/logos-03.png",
-      "/images/projects/logos/logos-04.png",
-    ],
-  },
   // ─── FINE ART ───
   {
     slug: "oil-paintings",

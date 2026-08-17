@@ -291,7 +291,7 @@ export default function ProjectPage() {
                             after={pair.after}
                             beforeLabel={pair.beforeLabel ?? "Rendering"}
                             afterLabel={pair.afterLabel ?? "Built"}
-                            alt={`${project.title} — ${pair.caption ?? "comparison"}`}
+                            alt={`${project.title}, ${pair.caption ?? "comparison"}`}
                           />
                           {pair.caption && (
                             <p className="mt-3 text-xs uppercase tracking-widest text-[var(--color-charcoal)]/50">
@@ -310,7 +310,7 @@ export default function ProjectPage() {
                         <MediaTile
                           key={src}
                           src={src}
-                          alt={`${project.title}${section.label ? " — " + section.label : ""} ${i + 1}`}
+                          alt={`${project.title}${section.label ? ", " + section.label : ""} ${i + 1}`}
                           bgColor={project.color}
                           onClick={() => {
                             const idx = lightboxImages.indexOf(src);

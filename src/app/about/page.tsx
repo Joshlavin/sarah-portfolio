@@ -99,13 +99,12 @@ export default function AboutPage() {
                   whatever medium lets me tell the story best.
                 </p>
                 <p>
-                  My work spans production design, visual development, fine
-                  art, 3D visualization, and graphic design. I
-                  design immersive environments for film and live events,
-                  create photorealistic interior renderings in Rhino and
-                  Enscape, paint in oils, develop stylized characters and
-                  worlds, and design everything from album artwork to
-                  promotional and print materials.
+                  I work across the art department — concept art and
+                  world-building, set design and drafting, in-world graphics,
+                  and build drawings. On most projects I&apos;m doing all of
+                  it: modeling and texturing a space in Rhino, rendering it in
+                  Enscape so everyone can see it before it exists, then
+                  drafting it out and seeing it through install.
                 </p>
                 <p>
                   No matter the medium, I&apos;m drawn to projects that

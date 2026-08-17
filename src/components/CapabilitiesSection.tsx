@@ -8,7 +8,7 @@ import SectionColorWash from "@/components/SectionColorWash";
 const skills = [
   {
     title: "Ideate",
-    description: "Concept art, research, and world-building — deciding how a place should feel before anything exists.",
+    description: "Concept art, research, and world-building: deciding how a place should feel before anything exists.",
     link: "/work/category/visual-development",
     color: "#B4CCCF",
     icon: (
@@ -37,7 +37,7 @@ const skills = [
   },
   {
     title: "Build",
-    description: "Build drawings, cut files, in-world graphics, and on-site install — through to the finished set.",
+    description: "Build drawings, cut files, in-world graphics, and on-site install, through to the finished set.",
     link: "/work/category/production-design",
     color: "#28536B",
     icon: (
@@ -69,7 +69,7 @@ export default function CapabilitiesSection() {
               What I Do
             </h2>
             <p className="mt-4 text-base md:text-lg text-[var(--color-charcoal)]/50 font-light max-w-2xl mx-auto">
-              I work across the art department — concept, set design, drafting,
+              I work across the art department: concept, set design, drafting,
               graphics, and build. Most projects I take from first sketch to
               finished install.
             </p>

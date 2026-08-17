@@ -30,7 +30,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Sarah Lavin | Production Designer & Visual Artist",
   description:
-    "Los Angeles art department designer working across concept, set design, drafting, graphics, and build — from first sketch to finished install.",
+    "Los Angeles art department designer working across concept, set design, drafting, graphics, and build. From first sketch to finished install.",
 };
 
 export default function RootLayout({

@@ -33,7 +33,7 @@ export default function CTASection() {
           Let&apos;s build something together.
         </h2>
         <p className="text-lg text-white/50 mb-12 max-w-md mx-auto font-light">
-          Have a project in mind? Whether it&apos;s a set, illustration, rendering, or something new, I&apos;d love to hear about it.
+          Have a project in mind? Whether you need it concepted, rendered, drafted, or built, I&apos;d love to hear about it.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link

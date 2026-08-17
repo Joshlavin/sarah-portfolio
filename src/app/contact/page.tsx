@@ -88,10 +88,12 @@ export default function ContactPage() {
             </h3>
             <div className="flex flex-wrap gap-3">
               {[
-                "Film & TV Production Design",
+                "Production Design",
                 "Premiere & Event Design",
-                "Interior Design Rendering",
-                "Freelance Set Design",
+                "Set Design & Drafting",
+                "Concept Art & Vis Dev",
+                "3D Modeling & Rendering",
+                "Art Department Graphics",
               ].map((item) => (
                 <span
                   key={item}

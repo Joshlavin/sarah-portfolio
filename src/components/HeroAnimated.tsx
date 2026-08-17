@@ -143,7 +143,7 @@ const ROW2 = [
   "/images/projects/lost-city-of-zeloria/lost-city-of-zeloria-01.jpg",
   "/images/projects/frankenstein/premiere-event/frankenstein-premiere-event-03.jpg",
   "/images/projects/luxury-add-on/luxury-add-on-10.jpg",
-  "/images/projects/environments/environments-02.jpg",
+  "/images/projects/taylor-swift-show/taylor-swift-show-01.jpg",
   "/images/projects/victorian-house/studies/victorian-house-studies-01.jpg",
   "/images/projects/album-artwork/album-artwork-01.jpg",
 ];

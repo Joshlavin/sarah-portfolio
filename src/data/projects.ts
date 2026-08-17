@@ -77,7 +77,7 @@ export const categoryMeta: CategoryMeta[] = [
   {
     slug: "conceptual-production-design",
     name: "Conceptual Production Design",
-    tagline: "Speculative production design — set, environment, and concept work developed outside of a client brief.",
+    tagline: "Speculative production design: set, environment, and concept work developed outside of a client brief.",
     heroImage: "/images/projects/inside-out/inside-out-01.jpg",
   },
   {
@@ -165,7 +165,7 @@ export const projects: Project[] = [
       },
     ],
     details:
-      "Production design for Apple TV's pop-up activation at Westfield Century City. Built and textured a complete 3D model of the mall atrium to visualize the pop-up in situ, from concept renders through an animated walkthrough. Also produced show-window build drawings, vinyl cut files, and printed graphics — including window displays for The Morning Show, Slow Horses, Shrinking, Pluribus, Imperfect Women, Your Friends & Neighbors, and Margo's Got Money Troubles.",
+      "Production design for Apple TV's pop-up activation at Westfield Century City. Built and textured a complete 3D model of the mall atrium to visualize the pop-up in situ, from concept renders through an animated walkthrough. Also produced show-window build drawings, vinyl cut files, and printed graphics, including window displays for The Morning Show, Slow Horses, Shrinking, Pluribus, Imperfect Women, Your Friends & Neighbors, and Margo's Got Money Troubles.",
   },
   {
     slug: "wake-up-dead-man",
@@ -320,7 +320,7 @@ export const projects: Project[] = [
     title: "Apple TV+ Emmy House",
     category: "Production Design",
     description:
-      "Immersive FYC event sets for Apple TV+'s 2025 Emmy campaign — environments for Emmy-eligible shows with interactive elements, from build drawing through installation.",
+      "Immersive FYC event sets for Apple TV+'s 2025 Emmy campaign, with environments for Emmy-eligible shows with interactive elements, from build drawing through installation.",
     thumbnail: "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-02.png",
     color: "#1D1D1F",
     year: "2025",
@@ -391,7 +391,7 @@ export const projects: Project[] = [
     title: "Studio Connelly Contract Work",
     category: "Production Design",
     description:
-      "Set decoration and event design as an independent contractor — Real Housewives of Beverly Hills, iHeart × The Lumineers, America's Most Wanted, and TMZ.",
+      "Set decoration and event design as an independent contractor for Real Housewives of Beverly Hills, iHeart × The Lumineers, America's Most Wanted, and TMZ.",
     thumbnail: "/images/projects/studio-connelly-contract-work/studio-connelly-contract-work-03.jpg",
     color: "#A85C2C",
     year: "2025",
@@ -415,7 +415,7 @@ export const projects: Project[] = [
     title: "The Bonsai",
     category: "Production Design",
     description:
-      "Designed and built three sets — a hand-carved foam dungeon, a hoarder house interior, and a magical forest — for a short film about an agoraphobic woman confronting her past.",
+      "Designed and built three sets (a hand-carved foam dungeon, a hoarder house interior, and a magical forest) for a short film about an agoraphobic woman confronting her past.",
     thumbnail: "/images/projects/the-bonsai/stills/the-bonsai-stills-01.jpg",
     color: "#4A7CE8",
     year: "2024",
@@ -709,7 +709,7 @@ export const projects: Project[] = [
     slug: "victorian-house",
     title: "Victorian House",
     category: "Visual Development",
-    description: "Visual development project for a San Francisco Victorian — color study, environment design, and an animatic.",
+    description: "Visual development project for a San Francisco Victorian, with color study, environment design, and an animatic.",
     thumbnail: "/images/projects/victorian-house/studies/victorian-house-studies-01.jpg",
     color: "#7A9CC6",
     tools: ["Procreate", "Photoshop", "Animation"],
@@ -770,7 +770,7 @@ export const projects: Project[] = [
     slug: "environments",
     title: "Environments",
     category: "Visual Development",
-    description: "Environment design and key frames — interiors, exteriors, atmospheres.",
+    description: "Environment design and key frames: interiors, exteriors, atmospheres.",
     thumbnail: "/images/projects/environments/environments-02.jpg",
     color: "#9BAFCB",
     tools: ["Procreate", "Photoshop"],
@@ -806,7 +806,7 @@ export const projects: Project[] = [
     title: "Inside Out",
     category: "Conceptual Production Design",
     description:
-      "A self-initiated design study reimagining the world of Pixar's Inside Out for live action — environment design, palette, materials, plans, and key art.",
+      "A self-initiated design study reimagining the world of Pixar's Inside Out for live action: environment design, palette, materials, plans, and key art.",
     thumbnail: "/images/projects/inside-out/inside-out-01.jpg",
     color: "#7A9B4C",
     type: "Personal Design Study",
@@ -824,14 +824,14 @@ export const projects: Project[] = [
       "/images/projects/inside-out/inside-out-10.jpg",
     ],
     details:
-      "A personal production design exercise exploring how the emotional landscape of Pixar's Inside Out might translate to a physical set. Focused on environment design — palette, materials, plan layouts, and director's mood references. Created independently as a portfolio piece.",
+      "A personal production design exercise exploring how the emotional landscape of Pixar's Inside Out might translate to a physical set. Focused on environment design: palette, materials, plan layouts, and director's mood references. Created independently as a portfolio piece.",
   },
   {
     slug: "fam",
     title: "FAM",
     category: "Conceptual Production Design",
     description:
-      "Three interior environments — bedroom, kitchen, living room — for a short film concept. Director plans, render models, and dressing concepts.",
+      "Three interior environments (bedroom, kitchen, living room) for a short film concept. Director plans, render models, and dressing concepts.",
     thumbnail: "/images/projects/fam/fam-04.jpg",
     color: "#4A7CE8",
     type: "Conceptual Study",
@@ -855,7 +855,7 @@ export const projects: Project[] = [
     title: "The Taylor Swift Show",
     category: "Conceptual Production Design",
     description:
-      "A self-initiated concert design study imagining the staging for a Taylor Swift live show — stage layouts, stylized renders, and visual treatment.",
+      "A self-initiated concert design study imagining the staging for a Taylor Swift live show: stage layouts, stylized renders, and visual treatment.",
     thumbnail: "/images/projects/taylor-swift-show/taylor-swift-show-02.jpg",
     color: "#C53D8B",
     type: "Personal Design Study",
@@ -914,7 +914,7 @@ export const projects: Project[] = [
     title: "Album Artwork",
     category: "Graphic Design",
     description:
-      "Album covers and tracklists for musician Lizzy Hilliard — growth vol. 1, Cheer, and the Abington single release.",
+      "Album covers and tracklists for musician Lizzy Hilliard: growth vol. 1, Cheer, and the Abington single release.",
     thumbnail: "/images/projects/album-artwork/album-artwork-01.jpg",
     color: "#C5D5B0",
     type: "Album Artwork",
@@ -933,7 +933,7 @@ export const projects: Project[] = [
     slug: "oil-paintings",
     title: "Oil Paintings",
     category: "Fine Art",
-    description: "Oil paintings on canvas — color, light, and figurative studies.",
+    description: "Oil paintings on canvas: color, light, and figurative studies.",
     thumbnail: "/images/projects/oil-paintings/oil-paintings-01.jpg",
     color: "#F2B8C6",
     tools: ["Oil on canvas"],
@@ -961,7 +961,7 @@ export const projects: Project[] = [
     slug: "acrylic-paintings",
     title: "Acrylic Paintings",
     category: "Fine Art",
-    description: "Acrylic on canvas — bolder palettes and faster studies than the oils.",
+    description: "Acrylic on canvas, with bolder palettes and faster studies than the oils.",
     thumbnail: "/images/projects/acrylic-paintings/acrylic-paintings-01.jpg",
     color: "#E8A8B4",
     tools: ["Acrylic on canvas"],
@@ -979,7 +979,7 @@ export const projects: Project[] = [
     slug: "graphite-charcoal",
     title: "Graphite & Charcoal",
     category: "Fine Art",
-    description: "Drawings in graphite and charcoal — figure studies and observation.",
+    description: "Drawings in graphite and charcoal: figure studies and observation.",
     thumbnail: "/images/projects/graphite-charcoal/graphite-charcoal-01.jpg",
     color: "#8A8580",
     tools: ["Graphite", "Charcoal"],
@@ -997,7 +997,7 @@ export const projects: Project[] = [
     slug: "oil-pastels",
     title: "Oil Pastels",
     category: "Fine Art",
-    description: "Oil pastel studies — texture, layering, and color blocking.",
+    description: "Oil pastel studies in texture, layering, and color blocking.",
     thumbnail: "/images/projects/oil-pastels/oil-pastels-01.jpg",
     color: "#E8B85C",
     tools: ["Oil pastel"],
@@ -1013,7 +1013,7 @@ export const projects: Project[] = [
     title: "Sketchbook & Process",
     category: "Fine Art",
     description:
-      "A landing area for raw work in progress. Sketchbook pages — visual diary of travel, portraits, and ideas — alongside digital studies, experiments, and personal pieces.",
+      "A landing area for raw work in progress. Sketchbook pages (a visual diary of travel, portraits, and ideas) alongside digital studies, experiments, and personal pieces.",
     thumbnail: "/images/projects/sketchbook/sketchbook-01.jpg",
     color: "#B8C8E0",
     type: "Process & WIP",

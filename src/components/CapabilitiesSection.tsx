@@ -7,23 +7,8 @@ import SectionColorWash from "@/components/SectionColorWash";
 
 const skills = [
   {
-    title: "Production Designer",
-    description: "From sketch to set. Film sets, events, and immersive spaces built from the ground up.",
-    link: "/work/category/production-design",
-    color: "#8FB78F",
-    icon: (
-      <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
-        <rect x="4" y="8" width="32" height="20" rx="2" stroke="currentColor" strokeWidth="2" />
-        <path d="M15 28L12 34M25 28L28 34" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-        <path d="M14 14L18 20H10L14 14Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <path d="M24 16L28 20H20L24 16Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <circle cx="30" cy="13" r="2" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
-  },
-  {
-    title: "Vis Dev Artist",
-    description: "World-building, environment design, and visual storytelling for film and animation.",
+    title: "Ideate",
+    description: "Concept art, research, and world-building — deciding how a place should feel before anything exists.",
     link: "/work/category/visual-development",
     color: "#B4CCCF",
     icon: (
@@ -38,17 +23,30 @@ const skills = [
     ),
   },
   {
-    title: "Brand Builder",
-    description: "Logos, album artwork, packaging, and visual identities with a strong point of view.",
-    link: "/work/category/graphic-design",
+    title: "Visualize",
+    description: "3D models, textures, and photoreal renders that show a client exactly what they are getting.",
+    link: "/work/category/3d-visualization",
+    color: "#8FB78F",
+    icon: (
+      <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
+        <path d="M20 4L36 14V28L20 38L4 28V14L20 4Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M20 4L20 38" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M4 14L20 24L36 14" stroke="currentColor" strokeWidth="1.5" />
+      </svg>
+    ),
+  },
+  {
+    title: "Build",
+    description: "Build drawings, cut files, in-world graphics, and on-site install — through to the finished set.",
+    link: "/work/category/production-design",
     color: "#28536B",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
-        <rect x="6" y="4" width="22" height="32" rx="2" stroke="currentColor" strokeWidth="2" />
-        <line x1="10" y1="12" x2="24" y2="12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-        <line x1="10" y1="17" x2="20" y2="17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-        <rect x="10" y="22" width="14" height="8" rx="1" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M30 10L36 4V30L30 36" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="4" y="8" width="32" height="20" rx="2" stroke="currentColor" strokeWidth="2" />
+        <path d="M15 28L12 34M25 28L28 34" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M14 14L18 20H10L14 14Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+        <path d="M24 16L28 20H20L24 16Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+        <circle cx="30" cy="13" r="2" stroke="currentColor" strokeWidth="1.5" />
       </svg>
     ),
   },
@@ -70,6 +68,11 @@ export default function CapabilitiesSection() {
             <h2 className="font-[family-name:var(--font-poppins)] font-semibold text-4xl md:text-5xl text-[var(--color-charcoal)]">
               What I Do
             </h2>
+            <p className="mt-4 text-base md:text-lg text-[var(--color-charcoal)]/50 font-light max-w-2xl mx-auto">
+              I work across the art department — concept, set design, drafting,
+              graphics, and build. Most projects I take from first sketch to
+              finished install.
+            </p>
           </motion.div>
 
           {/* 3 equal cards */}

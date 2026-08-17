@@ -153,9 +153,9 @@ const ROW3 = [
   "/images/projects/apple-tv-century-city/event-photos/apple-tv-century-city-event-04.jpg",
   "/images/projects/back-to-me/stills/back-to-me-stills-04.jpg",
   "/images/projects/apple-tv-emmy-house/apple-tv-emmy-house-the-studio-screening-room.jpg",
-  "/images/projects/wake-up-dead-man/wake-up-dead-man-01.jpg",
+  "/images/projects/wake-up-dead-man/wake-up-dead-man-13.jpg",
   "/images/projects/luxury-add-on/luxury-add-on-07.jpg",
-  "/images/projects/the-bonsai/stills/the-bonsai-stills-15.jpg",
+  "/images/projects/the-bonsai/stills/the-bonsai-stills-02.jpg",
 ];
 
 function MarqueeRow({

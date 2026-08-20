@@ -626,7 +626,7 @@ export const projects: Project[] = [
       "Research-driven proof of concept for a period piece set in 1968 Paris. Environment design, dressing, and visual treatment.",
     thumbnail: "/images/projects/kissinger-takes-paris/kissinger-takes-paris-02.jpg",
     color: "#C4533C",
-    year: "2023",
+    year: "2024",
     type: "Proof of Concept",
     tools: ["SketchUp", "Photoshop", "Research"],
     images: [

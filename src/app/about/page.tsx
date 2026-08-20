@@ -87,13 +87,13 @@ const events = [
     year: "2025",
   },
   {
-    title: "iHeart × The Lumineers",
+    title: "iHeart Radio × The Lumineers",
     role: "Design Contractor, Studio Connelly",
     type: "Live Event",
     year: "2025",
   },
   {
-    title: "iHeartRadio Podcast Awards",
+    title: "iHeart Radio Podcast Awards",
     role: "Design Contractor, Studio Connelly",
     type: "Live Event",
     year: "2025",

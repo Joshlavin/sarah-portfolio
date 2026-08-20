@@ -145,6 +145,11 @@ const tools = [
   "Illustrator",
   "Procreate",
   "Lightroom",
+  "Premiere",
+  "Figma",
+  "Higgsfield",
+  "Seedance",
+  "Kling",
 ];
 
 export default function AboutPage() {

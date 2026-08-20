@@ -43,6 +43,69 @@ const filmography = [
   },
 ];
 
+const events = [
+  {
+    title: "Apple TV Emmy Activation",
+    role: "Junior Production Designer",
+    type: "Century City Mall",
+    year: "2026",
+  },
+  {
+    title: "Palm Royale",
+    role: "Junior Production Designer",
+    type: "FYC Event, Apple TV",
+    year: "2026",
+  },
+  {
+    title: "Stick",
+    role: "Junior Production Designer",
+    type: "FYC Event, Apple TV",
+    year: "2026",
+  },
+  {
+    title: "Margo's Got Money Troubles",
+    role: "Junior Production Designer",
+    type: "New York Premiere, Apple TV",
+    year: "2026",
+  },
+  {
+    title: "Severance Immersive Fan Experience & Cast Q&A",
+    role: "Junior Production Designer",
+    type: "Bell Works, Apple TV",
+    year: "2025",
+  },
+  {
+    title: "Jay Kelly",
+    role: "Junior Production Designer",
+    type: "Los Angeles Premiere, Netflix",
+    year: "2025",
+  },
+  {
+    title: "Frankenstein",
+    role: "Junior Production Designer",
+    type: "Los Angeles Premiere, Netflix",
+    year: "2025",
+  },
+  {
+    title: "Wake Up Dead Man: A Knives Out Mystery",
+    role: "Junior Production Designer",
+    type: "Los Angeles Premiere, Netflix",
+    year: "2025",
+  },
+  {
+    title: "Apple TV Emmy House",
+    role: "Junior Production Designer",
+    type: "Brand Activation, Apple TV",
+    year: "2025",
+  },
+  {
+    title: "Happy Gilmore 2",
+    role: "Junior Production Designer",
+    type: "New York Premiere, Netflix",
+    year: "2025",
+  },
+];
+
 const tools = [
   "Rhino",
   "Enscape",
@@ -154,6 +217,51 @@ export default function AboutPage() {
                   <div className="col-span-2 md:col-span-3 text-right">
                     <span className="text-xs text-[var(--color-charcoal)]/40 uppercase tracking-wider">
                       {film.type}
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Events and Brand Activations */}
+          <motion.div
+            className="mb-24"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="font-[family-name:var(--font-instrument-serif)] text-4xl italic text-[var(--color-charcoal)] mb-12">
+              Events &amp; Brand Activations
+            </h2>
+            <div className="space-y-0">
+              {events.map((event, i) => (
+                <motion.div
+                  key={event.title}
+                  className="py-6 border-b border-[var(--color-charcoal)]/10 grid grid-cols-12 gap-4 items-baseline"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.08 }}
+                >
+                  <div className="col-span-1">
+                    <span className="text-sm text-[var(--color-charcoal)]/40 font-mono">
+                      {event.year}
+                    </span>
+                  </div>
+                  <div className="col-span-6 md:col-span-5">
+                    <h3 className="font-[family-name:var(--font-instrument-serif)] text-xl italic text-[var(--color-charcoal)]">
+                      {event.title}
+                    </h3>
+                  </div>
+                  <div className="col-span-3 md:col-span-3">
+                    <span className="text-sm text-[var(--color-charcoal)]/60">
+                      {event.role}
+                    </span>
+                  </div>
+                  <div className="col-span-2 md:col-span-3 text-right">
+                    <span className="text-xs text-[var(--color-charcoal)]/40 uppercase tracking-wider">
+                      {event.type}
                     </span>
                   </div>
                 </motion.div>

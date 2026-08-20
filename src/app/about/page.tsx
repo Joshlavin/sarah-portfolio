@@ -87,7 +87,7 @@ const events = [
     year: "2025",
   },
   {
-    title: "F1",
+    title: "F1 The Movie",
     role: "Junior Production Designer",
     type: "FYC Event, Apple TV",
     year: "2025",

@@ -93,6 +93,12 @@ const events = [
     year: "2025",
   },
   {
+    title: "iHeartRadio Podcast Awards",
+    role: "Design Contractor, Studio Connelly",
+    type: "Live Event",
+    year: "2025",
+  },
+  {
     title: "Jay Kelly",
     role: "Junior Production Designer",
     type: "Los Angeles Premiere, Netflix",

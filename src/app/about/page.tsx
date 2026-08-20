@@ -12,19 +12,13 @@ const filmography = [
     year: "2026",
   },
   {
-    title: "Real Housewives of Beverly Hills",
+    title: "Real Housewives of Beverly Hills Season 21 Reunion",
     role: "Design Contractor, Studio Connelly",
     type: "Television",
     year: "2025",
   },
   {
     title: "America's Most Wanted",
-    role: "Design Contractor, Studio Connelly",
-    type: "Television",
-    year: "2025",
-  },
-  {
-    title: "TMZ",
     role: "Design Contractor, Studio Connelly",
     type: "Television",
     year: "2025",

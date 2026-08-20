@@ -12,6 +12,24 @@ const filmography = [
     year: "2026",
   },
   {
+    title: "Real Housewives of Beverly Hills",
+    role: "Design Contractor, Studio Connelly",
+    type: "Television",
+    year: "2025",
+  },
+  {
+    title: "America's Most Wanted",
+    role: "Design Contractor, Studio Connelly",
+    type: "Television",
+    year: "2025",
+  },
+  {
+    title: "TMZ",
+    role: "Design Contractor, Studio Connelly",
+    type: "Television",
+    year: "2025",
+  },
+  {
     title: "Double Time",
     role: "Production Designer",
     type: "Short Film",
@@ -72,6 +90,12 @@ const events = [
     title: "Severance Immersive Fan Experience & Cast Q&A",
     role: "Junior Production Designer",
     type: "Bell Works, Apple TV",
+    year: "2025",
+  },
+  {
+    title: "iHeart × The Lumineers",
+    role: "Design Contractor, Studio Connelly",
+    type: "Live Event",
     year: "2025",
   },
   {

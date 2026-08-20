@@ -495,10 +495,6 @@ export const projects: Project[] = [
     tools: ["SketchUp", "Photoshop"],
     sections: [
       {
-        label: "Trailer",
-        images: ["/images/projects/back-to-me/trailer/back-to-me-trailer-01.mp4"],
-      },
-      {
         label: "Stills",
         images: [
           "/images/projects/back-to-me/stills/back-to-me-stills-01.jpg",
@@ -909,6 +905,68 @@ export const projects: Project[] = [
     ],
   },
   // ─── GRAPHIC DESIGN ───
+  {
+    slug: "graphics-for-events",
+    title: "Graphics for Events and Activations",
+    category: "Graphic Design",
+    description:
+      "In-world graphics for premieres and brand activations: stained glass panels, cocktail menus, branded signage, illustrated maps, and printed collateral.",
+    thumbnail: "/images/projects/wake-up-dead-man/wake-up-dead-man-01.jpg",
+    color: "#C5D5B0",
+    type: "Event Graphics",
+    tools: ["Illustrator", "Photoshop", "Procreate"],
+    images: [
+      "/images/projects/wake-up-dead-man/wake-up-dead-man-01.jpg",
+      "/images/projects/wake-up-dead-man/wake-up-dead-man-02.jpg",
+      "/images/projects/frankenstein/graphics/frankenstein-graphics-01.jpg",
+      "/images/projects/happy-gilmore-2/happy-gilmore-2-05.jpg",
+      "/images/projects/happy-gilmore-2/happy-gilmore-2-08.jpg",
+      "/images/projects/happy-gilmore-2/happy-gilmore-2-09.jpg",
+      "/images/projects/happy-gilmore-2/happy-gilmore-2-10.jpg",
+      "/images/projects/happy-gilmore-2/happy-gilmore-2-11.jpg",
+      "/images/projects/apple-tv-century-city/graphics/apple-tv-century-city-graphics-01.png",
+      "/images/projects/apple-tv-century-city/graphics/apple-tv-century-city-graphics-02.png",
+      "/images/projects/apple-tv-century-city/graphics/apple-tv-century-city-graphics-03.png",
+    ],
+    details:
+      "Graphic design produced for live events and brand activations, including the stained glass window graphics and specialty cocktail menu for the Wake Up Dead Man premiere, an illustrated Hollywood landmarks map for Frankenstein, branded cubbies and printed collateral for Happy Gilmore 2, and vinyl cut files and packaging for the Apple TV pop-up.",
+  },
+  {
+    slug: "graphics-for-film",
+    title: "Graphics for Film",
+    category: "Graphic Design",
+    description:
+      "In-world graphics built to live inside a scene: signage, certificates, labels, and printed props designed to read on camera.",
+    thumbnail: "/images/projects/coop/graphics/coop-graphics-01.jpg",
+    color: "#C5D5B0",
+    type: "Film Graphics",
+    tools: ["Illustrator", "Photoshop", "Procreate"],
+    images: [
+      "/images/projects/coop/graphics/coop-graphics-01.jpg",
+      "/images/projects/coop/graphics/coop-graphics-02.jpg",
+      "/images/projects/coop/graphics/coop-graphics-03.jpg",
+      "/images/projects/coop/graphics/coop-graphics-04.jpg",
+      "/images/projects/coop/graphics/coop-graphics-05.jpg",
+      "/images/projects/coop/graphics/coop-graphics-06.jpg",
+      "/images/projects/coop/graphics/coop-graphics-07.jpg",
+      "/images/projects/coop/graphics/coop-graphics-08.jpg",
+      "/images/projects/double-time/graphics/double-time-graphics-01.jpg",
+      "/images/projects/double-time/graphics/double-time-graphics-02.jpg",
+      "/images/projects/double-time/graphics/double-time-graphics-03.jpg",
+      "/images/projects/double-time/graphics/double-time-graphics-04.jpg",
+      "/images/projects/double-time/graphics/double-time-graphics-05.jpg",
+      "/images/projects/double-time/graphics/double-time-graphics-06.jpg",
+      "/images/projects/double-time/graphics/double-time-graphics-07.jpg",
+      "/images/projects/double-time/graphics/double-time-graphics-08.jpg",
+      "/images/projects/the-bonsai/graphics/the-bonsai-graphics-01.jpg",
+      "/images/projects/the-bonsai/graphics/the-bonsai-graphics-02.jpg",
+      "/images/projects/the-bonsai/graphics/the-bonsai-graphics-03.jpg",
+      "/images/projects/the-bonsai/graphics/the-bonsai-graphics-04.jpg",
+      "/images/projects/the-bonsai/graphics/the-bonsai-graphics-05.jpg",
+    ],
+    details:
+      "Graphic assets designed for short films, including the Legacy Darts trophy certificate and marketing collateral for Coop, diner signage and dressing for Double Time, and in-world printed pieces for The Bonsai. Each was built to sit naturally in the set and hold up in close-up.",
+  },
   {
     slug: "album-artwork",
     title: "Album Artwork",

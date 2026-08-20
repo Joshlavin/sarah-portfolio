@@ -42,15 +42,15 @@ const filmography = [
     year: "2024",
   },
   {
-    title: "Coop",
-    role: "Production Designer",
-    type: "Short Film",
-    year: "2023",
-  },
-  {
     title: "Kissinger Takes Paris",
     role: "Production Designer",
     type: "Proof of Concept",
+    year: "2024",
+  },
+  {
+    title: "Coop",
+    role: "Production Designer",
+    type: "Short Film",
     year: "2023",
   },
   {

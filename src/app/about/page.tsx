@@ -87,6 +87,12 @@ const events = [
     year: "2025",
   },
   {
+    title: "Frankenstein Halloween Experience",
+    role: "Junior Production Designer",
+    type: "Brand Activation, Netflix",
+    year: "2025",
+  },
+  {
     title: "Wake Up Dead Man: A Knives Out Mystery",
     role: "Junior Production Designer",
     type: "Los Angeles Premiere, Netflix",

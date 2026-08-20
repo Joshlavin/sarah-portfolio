@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 import SectionColorWash from "@/components/SectionColorWash";
-import { projects, categoryMeta, categoryColors } from "@/data/projects";
+import { projects, categoryMeta } from "@/data/projects";
 import { notFound } from "next/navigation";
 
 export default function CategoryPage() {
@@ -18,7 +18,6 @@ export default function CategoryPage() {
   }
 
   const filtered = projects.filter((p) => p.category === category.name);
-  const color = categoryColors[category.name];
 
   return (
     <SectionColorWash index={1}>
@@ -50,17 +49,7 @@ export default function CategoryPage() {
               &larr; All Work
             </Link>
 
-            <div className="flex items-center gap-3 mb-4">
-              <div
-                className="w-3 h-3 rounded-full"
-                style={{ backgroundColor: color }}
-              />
-              <span className="text-sm uppercase tracking-widest text-[var(--color-charcoal)]/50">
-                {filtered.length} project{filtered.length !== 1 ? "s" : ""}
-              </span>
-            </div>
-
-            <h1 className="font-[family-name:var(--font-instrument-serif)] text-6xl md:text-8xl italic text-[var(--color-charcoal)] mb-6">
+            <h1 className="font-[family-name:var(--font-instrument-serif)] text-6xl md:text-8xl italic text-[var(--color-charcoal)] mt-4 mb-6">
               {category.name}
             </h1>
 

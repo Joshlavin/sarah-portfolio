@@ -95,7 +95,7 @@ export const categoryMeta: CategoryMeta[] = [
   {
     slug: "graphic-design",
     name: "Graphic Design",
-    tagline: "Album art, packaging, promotional materials, and brand collateral.",
+    tagline: "Key art, brand collateral, packaging, signage, and large format print. Production ready files built to be fabricated, installed, and read on camera.",
     heroImage: "/images/projects/album-artwork/album-artwork-01.jpg",
   },
 ];

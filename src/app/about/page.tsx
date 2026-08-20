@@ -153,9 +153,6 @@ const tools = [
   "Lightroom",
   "Premiere",
   "Figma",
-  "Higgsfield",
-  "Seedance",
-  "Kling",
 ];
 
 export default function AboutPage() {

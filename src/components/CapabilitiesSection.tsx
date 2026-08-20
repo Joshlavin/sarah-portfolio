@@ -2,14 +2,12 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 import SectionColorWash from "@/components/SectionColorWash";
 
 const skills = [
   {
     title: "Ideate",
     description: "Concept art, research, and world-building: deciding how a place should feel before anything exists.",
-    link: "/work/category/visual-development",
     color: "#B4CCCF",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
@@ -25,7 +23,6 @@ const skills = [
   {
     title: "Visualize",
     description: "3D models, textures, and photoreal renders that show a client exactly what they are getting.",
-    link: "/work/category/3d-visualization",
     color: "#8FB78F",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
@@ -38,7 +35,6 @@ const skills = [
   {
     title: "Build",
     description: "Build drawings, cut files, in-world graphics, and on-site install, through to the finished set.",
-    link: "/work/category/production-design",
     color: "#28536B",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
@@ -89,9 +85,9 @@ export default function CapabilitiesSection() {
                   onMouseEnter={() => setHovered(i)}
                   onMouseLeave={() => setHovered(null)}
                 >
-                  <Link href={skill.link} className="block h-full">
+                  <div className="block h-full">
                     <motion.div
-                      className="relative h-full rounded-3xl p-6 flex flex-col justify-between overflow-hidden border border-[var(--color-charcoal)]/5 cursor-pointer"
+                      className="relative h-full rounded-3xl p-6 flex flex-col justify-between overflow-hidden border border-[var(--color-charcoal)]/5"
                       animate={{
                         backgroundColor: hovered === i ? skill.color : "#ffffff",
                       }}
@@ -137,7 +133,7 @@ export default function CapabilitiesSection() {
                         </motion.p>
                       </div>
                     </motion.div>
-                  </Link>
+                  </div>
                 </motion.div>
               );
             })}

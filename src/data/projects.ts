@@ -961,25 +961,11 @@ export const projects: Project[] = [
     category: "Graphic Design",
     description:
       "In-world graphics built to live inside a scene: signage, certificates, labels, and printed props designed to read on camera.",
-    thumbnail: "/images/projects/coop/graphics/coop-graphics-01.jpg",
+    thumbnail: "/images/projects/the-bonsai/graphics/the-bonsai-graphics-03.jpg",
     color: "#C5D5B0",
     type: "Film Graphics",
     tools: ["Illustrator", "Photoshop", "Procreate"],
     sections: [
-      {
-        label: "Coop",
-        images: [
-          "/images/projects/coop/graphics/coop-graphics-01.jpg",
-          "/images/projects/coop/graphics/coop-graphics-02.jpg",
-          "/images/projects/coop/graphics/coop-graphics-03.jpg",
-          "/images/projects/coop/graphics/coop-graphics-04.jpg",
-          "/images/projects/coop/graphics/coop-graphics-05.jpg",
-          "/images/projects/coop/graphics/coop-graphics-06.jpg",
-          "/images/projects/coop/graphics/coop-graphics-07.jpg",
-          "/images/projects/coop/graphics/coop-graphics-08.jpg",
-          "/images/projects/coop/stills/coop-stills-04.jpg",
-        ],
-      },
       {
         label: "Double Time",
         images: [
@@ -1002,6 +988,20 @@ export const projects: Project[] = [
           "/images/projects/the-bonsai/graphics/the-bonsai-graphics-03.jpg",
           "/images/projects/the-bonsai/graphics/the-bonsai-graphics-04.jpg",
           "/images/projects/the-bonsai/graphics/the-bonsai-graphics-05.jpg",
+        ],
+      },
+      {
+        label: "Coop",
+        images: [
+          "/images/projects/coop/graphics/coop-graphics-01.jpg",
+          "/images/projects/coop/graphics/coop-graphics-02.jpg",
+          "/images/projects/coop/graphics/coop-graphics-03.jpg",
+          "/images/projects/coop/graphics/coop-graphics-04.jpg",
+          "/images/projects/coop/graphics/coop-graphics-05.jpg",
+          "/images/projects/coop/graphics/coop-graphics-06.jpg",
+          "/images/projects/coop/graphics/coop-graphics-07.jpg",
+          "/images/projects/coop/graphics/coop-graphics-08.jpg",
+          "/images/projects/coop/stills/coop-stills-04.jpg",
         ],
       },
     ],

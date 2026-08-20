@@ -391,7 +391,7 @@ export const projects: Project[] = [
     title: "Studio Connelly Contract Work",
     category: "Production Design",
     description:
-      "Set decoration and event design as an independent contractor for Real Housewives of Beverly Hills, iHeart × The Lumineers, America's Most Wanted, and TMZ.",
+      "Set decoration and event design as an independent contractor for Real Housewives of Beverly Hills, iHeart × The Lumineers, and America's Most Wanted.",
     thumbnail: "/images/projects/studio-connelly-contract-work/studio-connelly-contract-work-03.jpg",
     color: "#A85C2C",
     year: "2025",
@@ -407,7 +407,7 @@ export const projects: Project[] = [
       "/images/projects/studio-connelly-contract-work/studio-connelly-contract-work-06.jpg",
     ],
     details:
-      "Independent contractor work spanning TV broadcast and live events. Deliverables include desk and lamp design comps for AMW, table layouts for TMZ, set treatment for iHeart × The Lumineers, furniture studies for Real Housewives of Beverly Hills, and original mood boards.",
+      "Independent contractor work spanning TV broadcast and live events. Deliverables include desk and lamp design comps for AMW, table layouts and set treatment for iHeart × The Lumineers, furniture studies for Real Housewives of Beverly Hills, and original mood boards.",
   },
   // ─── PRODUCTION DESIGN — SHORT FILMS ───
   {

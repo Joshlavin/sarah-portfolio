@@ -87,6 +87,12 @@ const events = [
     year: "2025",
   },
   {
+    title: "F1",
+    role: "Junior Production Designer",
+    type: "FYC Event, Apple TV",
+    year: "2025",
+  },
+  {
     title: "iHeart Radio × The Lumineers",
     role: "Design Contractor, Studio Connelly",
     type: "Live Event",

@@ -93,6 +93,12 @@ const events = [
     year: "2025",
   },
   {
+    title: "The Morning Show Season 4",
+    role: "Junior Production Designer",
+    type: "New York Premiere, Apple TV",
+    year: "2025",
+  },
+  {
     title: "iHeart Radio × The Lumineers",
     role: "Design Contractor, Studio Connelly",
     type: "Live Event",

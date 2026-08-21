@@ -106,7 +106,7 @@ const events = [
   },
   {
     title: "Goonies House Restoration",
-    role: "Design Contractor, JP Connelly",
+    role: "Design Contractor, Studio Connelly",
     type: "Restoration",
     year: "2025",
   },

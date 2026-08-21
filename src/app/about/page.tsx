@@ -81,6 +81,12 @@ const events = [
     year: "2026",
   },
   {
+    title: "The Last Thing He Told Me",
+    role: "Junior Production Designer",
+    type: "Bookmarked Live Event, Reese's Book Club",
+    year: "2026",
+  },
+  {
     title: "Severance Immersive Fan Experience & Cast Q&A",
     role: "Junior Production Designer",
     type: "Bell Works, Apple TV",

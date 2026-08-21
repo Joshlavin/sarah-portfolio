@@ -105,6 +105,12 @@ const events = [
     year: "2025",
   },
   {
+    title: "Goonies House Restoration",
+    role: "Design Contractor, JP Connelly",
+    type: "Restoration",
+    year: "2025",
+  },
+  {
     title: "Jay Kelly",
     role: "Junior Production Designer",
     type: "Los Angeles Premiere, Netflix",

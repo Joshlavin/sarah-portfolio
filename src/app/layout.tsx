@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Instrument_Serif, Poppins } from "next/font/google";
+import { DM_Sans, Instrument_Serif, Poppins, Anton } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import BrushStrokeReveal from "@/components/BrushStrokeReveal";
@@ -27,6 +27,14 @@ const poppins = Poppins({
   display: "swap",
 });
 
+// Bold condensed display face for headlines.
+const anton = Anton({
+  variable: "--font-anton",
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Sarah Lavin | Production Designer & Visual Artist",
   description:
@@ -41,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.variable} ${instrumentSerif.variable} ${poppins.variable} antialiased`}
+        className={`${dmSans.variable} ${instrumentSerif.variable} ${poppins.variable} ${anton.variable} antialiased`}
       >
         <BrushStrokeReveal />
         <Navigation />

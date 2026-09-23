@@ -39,7 +39,7 @@ export default function ContactPage() {
             <p className="text-sm uppercase tracking-[0.3em] text-[var(--color-charcoal)]/50 mb-3">
               Contact
             </p>
-            <h1 className="font-[family-name:var(--font-instrument-serif)] text-6xl md:text-7xl italic text-[var(--color-charcoal)] mb-4">
+            <h1 className="font-poster leading-[0.92] text-7xl md:text-[9rem] text-[var(--color-charcoal)] mb-4">
               Let&apos;s talk.
             </h1>
             <p className="text-xl text-[var(--color-charcoal)]/50 font-light max-w-lg mb-16">

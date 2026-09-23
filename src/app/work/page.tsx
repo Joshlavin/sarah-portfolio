@@ -27,7 +27,7 @@ export default function WorkPage() {
             <p className="text-sm uppercase tracking-[0.3em] text-[var(--color-charcoal)]/50 mb-3">
               Portfolio
             </p>
-            <h1 className="font-[family-name:var(--font-instrument-serif)] text-6xl md:text-7xl italic text-[var(--color-charcoal)] mb-4">
+            <h1 className="font-poster leading-[0.92] text-7xl md:text-[9rem] text-[var(--color-charcoal)] mb-4">
               Work
             </h1>
           </motion.div>

@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Top section */}
         <div className="flex flex-col md:flex-row items-start justify-between gap-16 mb-20">
           <div className="max-w-sm">
-            <span className="font-[family-name:var(--font-instrument-serif)] text-4xl text-white italic block mb-4">
+            <span className="font-poster text-6xl leading-none text-white block mb-4">
               Sarah Lavin
             </span>
             <p className="text-sm leading-relaxed">

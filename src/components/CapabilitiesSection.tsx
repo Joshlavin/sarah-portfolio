@@ -8,7 +8,7 @@ const skills = [
   {
     title: "Ideate",
     description: "Concept art, research, and world-building: deciding how a place should feel before anything exists.",
-    color: "#B4CCCF",
+    color: "#1B8EB0",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
         <circle cx="20" cy="20" r="16" stroke="currentColor" strokeWidth="2" />
@@ -23,7 +23,7 @@ const skills = [
   {
     title: "Visualize",
     description: "3D models, textures, and photoreal renders that show a client exactly what they are getting.",
-    color: "#8FB78F",
+    color: "#111349",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
         <path d="M20 4L36 14V28L20 38L4 28V14L20 4Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
@@ -35,7 +35,7 @@ const skills = [
   {
     title: "Build",
     description: "Build drawings, cut files, in-world graphics, and on-site install, through to the finished set.",
-    color: "#28536B",
+    color: "#2966E3",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
         <rect x="4" y="8" width="32" height="20" rx="2" stroke="currentColor" strokeWidth="2" />
@@ -61,10 +61,10 @@ export default function CapabilitiesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-[family-name:var(--font-poppins)] font-semibold text-4xl md:text-5xl text-[var(--color-charcoal)]">
+            <h2 className="font-poster text-6xl md:text-[8.5rem] leading-[0.9] text-[var(--color-charcoal)]">
               What I Do
             </h2>
-            <p className="mt-4 text-base md:text-lg text-[var(--color-charcoal)]/50 font-light max-w-2xl mx-auto">
+            <p className="mt-4 text-base md:text-lg text-[var(--color-charcoal)]/75 max-w-2xl mx-auto">
               I work across the art department: concept, set design, drafting,
               graphics, and build. Most projects I take from first sketch to
               finished install.
@@ -72,7 +72,7 @@ export default function CapabilitiesSection() {
           </motion.div>
 
           {/* 3 equal cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[200px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[240px]">
             {skills.map((skill, i) => {
               return (
                 <motion.div
@@ -118,14 +118,14 @@ export default function CapabilitiesSection() {
 
                       <div className="relative z-10">
                         <motion.h3
-                          className="font-[family-name:var(--font-poppins)] font-semibold text-base mb-1"
+                          className="font-poster text-3xl md:text-4xl leading-none mb-2"
                           animate={{ color: hovered === i ? "#ffffff" : "var(--color-charcoal)" }}
                           transition={{ duration: 0.3 }}
                         >
                           {skill.title}
                         </motion.h3>
                         <motion.p
-                          className="text-xs leading-relaxed"
+                          className="text-sm leading-relaxed"
                           animate={{ color: hovered === i ? "rgba(255,255,255,0.8)" : "rgba(26,26,26,0.45)" }}
                           transition={{ duration: 0.3 }}
                         >

@@ -17,11 +17,11 @@ export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 mix-blend-difference">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[var(--color-cream)]/95">
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
         {/* Logo / Name */}
         <Link href="/" className="relative group">
-          <span className="font-[family-name:var(--font-poppins)] text-lg text-white font-semibold tracking-tight">
+          <span className="font-poster text-2xl text-[var(--color-charcoal)] tracking-wide group-hover:text-[var(--color-indigo)] transition-colors">
             Sarah Lavin
           </span>
         </Link>
@@ -32,13 +32,13 @@ export default function Navigation() {
             <Link
               key={link.href}
               href={link.href}
-              className="relative text-sm text-white uppercase tracking-widest font-light"
+              className="relative text-sm text-[var(--color-charcoal)] uppercase tracking-widest font-medium hover:text-[var(--color-indigo)] transition-colors"
             >
               {link.label}
               {pathname === link.href && (
                 <motion.div
                   layoutId="nav-underline"
-                  className="absolute -bottom-1 left-0 right-0 h-[2px] bg-[var(--color-coral)]"
+                  className="absolute -bottom-1 left-0 right-0 h-[3px] rounded-full bg-[var(--color-indigo)]"
                   transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                 />
               )}
@@ -48,23 +48,23 @@ export default function Navigation() {
 
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden flex flex-col gap-1.5 w-8 h-8 items-center justify-center"
+          className="md:hidden relative z-50 flex flex-col gap-1.5 w-8 h-8 items-center justify-center"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
           <motion.span
             animate={mobileOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-            className="block w-6 h-[2px] bg-white"
+            className={`block w-6 h-[2px] ${mobileOpen ? "bg-white" : "bg-[var(--color-charcoal)]"}`}
           />
           <motion.span
             animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }}
-            className="block w-6 h-[2px] bg-white"
+            className={`block w-6 h-[2px] ${mobileOpen ? "bg-white" : "bg-[var(--color-charcoal)]"}`}
           />
           <motion.span
             animate={
               mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }
             }
-            className="block w-6 h-[2px] bg-white"
+            className={`block w-6 h-[2px] ${mobileOpen ? "bg-white" : "bg-[var(--color-charcoal)]"}`}
           />
         </button>
       </div>
@@ -88,7 +88,7 @@ export default function Navigation() {
                 <Link
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="font-[family-name:var(--font-instrument-serif)] text-4xl text-white italic"
+                  className="font-poster text-6xl text-white"
                 >
                   {link.label}
                 </Link>

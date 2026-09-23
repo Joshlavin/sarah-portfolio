@@ -41,13 +41,13 @@ function ProximityLetter({
     const dist = Math.sqrt(
       (mouseRef.current.x - cx) ** 2 + (mouseRef.current.y - cy) ** 2
     );
-    const radius = 50;
+    const radius = 90;
     const ratio = dist / (radius / 2);
     const falloff = Math.exp(-(ratio * ratio) / 2);
     proximity.set(falloff);
   });
 
-  const scale = useTransform(proximity, [0, 1], [1, 1.15]);
+  const scale = useTransform(proximity, [0, 1], [1, 1.12]);
   const yOffset = useTransform(proximity, [0, 1], [0, -8]);
   const rotate = useTransform(proximity, [0, 1], [0, (index % 2 === 0 ? 1 : -1) * 6]);
   const color = useTransform(
@@ -74,11 +74,11 @@ function ProximityLetter({
 }
 
 const DISCIPLINES = [
-  { text: "Production Designer", color: "#28536B" },
-  { text: "Set Designer", color: "#8FB78F" },
-  { text: "Concept Artist", color: "#28536B" },
-  { text: "3D Visualizer", color: "#8FB78F" },
-  { text: "Graphic Designer", color: "#28536B" },
+  { text: "Production Designer", color: "#2966E3" },
+  { text: "Set Designer", color: "#111349" },
+  { text: "Concept Artist", color: "#2966E3" },
+  { text: "3D Visualizer", color: "#111349" },
+  { text: "Graphic Designer", color: "#2966E3" },
 ];
 
 function TypingDiscipline() {
@@ -116,7 +116,7 @@ function TypingDiscipline() {
     <span style={{ color: DISCIPLINES[currentIndex].color }}>
       {displayed}
       <span
-        className="inline-block w-[2px] h-[1.1em] ml-1 align-middle rounded-full animate-blink"
+        className="inline-block w-[4px] h-[0.85em] ml-1.5 align-[-0.05em] rounded-full animate-blink"
         style={{ backgroundColor: DISCIPLINES[currentIndex].color }}
       />
     </span>
@@ -207,33 +207,26 @@ export default function HeroAnimated() {
       <section
         ref={containerRef}
         className="min-h-screen flex flex-col justify-center relative overflow-hidden"
-        style={!isMobile ? { cursor: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M6 26L8 18L22 4L28 10L14 24L6 26Z' fill='%23CBE6C7' stroke='%2328536B' stroke-width='1.5' stroke-linejoin='round'/%3E%3Cpath d='M8 18L14 24' stroke='%2328536B' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M6 26L4 28' stroke='%238FB78F' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E\") 4 28, auto" } : undefined}
       >
-        {/* Cursor trail - desktop only, loaded dynamically */}
-        {!isMobile && <CursorTrailLazy />}
-
         {/* Background blobs - static on mobile, animated on desktop */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div
             className="absolute w-[300px] md:w-[500px] h-[300px] md:h-[500px] rounded-full opacity-[0.07] blur-3xl"
-            style={{ background: "#8FB78F", top: "5%", left: "-10%" }}
+            style={{ background: "#111349", top: "5%", left: "-10%" }}
           />
           <div
             className="absolute w-[250px] md:w-[400px] h-[250px] md:h-[400px] rounded-full opacity-[0.07] blur-3xl"
-            style={{ background: "#B4CCCF", top: "20%", right: "-5%" }}
+            style={{ background: "#63D5F2", top: "20%", right: "-5%" }}
           />
           <div
             className="absolute w-[200px] md:w-[350px] h-[200px] md:h-[350px] rounded-full opacity-[0.06] blur-3xl"
-            style={{ background: "#CBE6C7", bottom: "10%", left: "20%" }}
+            style={{ background: "#CFEF69", bottom: "10%", left: "20%" }}
           />
           <div
             className="absolute w-[200px] md:w-[300px] h-[200px] md:h-[300px] rounded-full opacity-[0.07] blur-3xl"
-            style={{ background: "#28536B", bottom: "5%", right: "15%" }}
+            style={{ background: "#2966E3", bottom: "5%", right: "15%" }}
           />
         </div>
-
-        {/* Hidden doodles - desktop only */}
-        {!isMobile && <HiddenDoodlesLazy containerRef={containerRef} />}
 
         {/* Center content */}
         <div className="relative z-20 text-center px-6 pt-28 md:pt-32 pb-4 md:pb-6">
@@ -242,23 +235,23 @@ export default function HeroAnimated() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
           >
-            <p className="font-[family-name:var(--font-poppins)] text-base md:text-lg text-[var(--color-indigo)] font-medium tracking-wide mb-3">
+            <p className="font-[family-name:var(--font-instrument-serif)] italic text-2xl md:text-3xl text-[var(--color-indigo)] mb-2">
               Hey, I&apos;m
             </p>
           </motion.div>
 
           <motion.h1
-            className="font-[family-name:var(--font-poppins)] font-semibold text-[14vw] md:text-[9vw] text-[var(--color-charcoal)] leading-[1] mb-4"
+            className="font-poster text-[26vw] md:text-[15vw] text-[var(--color-charcoal)] leading-[0.82] mb-5"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.9, ease: "easeOut" }}
           >
-            <span className="block">
+            <span className="block md:inline">
               {line1Chars.map((char, i) => (
                 <ProximityLetter key={i} char={char} index={i} containerRef={containerRef} />
               ))}
             </span>
-            <span className="block">
+            <span className="block md:inline md:ml-[0.18em]">
               {line2Chars.map((char, i) => (
                 <ProximityLetter key={i} char={char} index={i + line1Chars.length} containerRef={containerRef} />
               ))}
@@ -266,7 +259,7 @@ export default function HeroAnimated() {
           </motion.h1>
 
           <motion.div
-            className="font-[family-name:var(--font-poppins)] text-lg md:text-2xl font-light mb-6 md:mb-8 h-8 md:h-10"
+            className="font-poster text-3xl md:text-5xl mb-7 md:mb-9 h-9 md:h-14"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.0, duration: 0.8 }}
@@ -280,10 +273,10 @@ export default function HeroAnimated() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.8, ease: "easeOut" }}
           >
-            <Link href="/work" className="px-6 md:px-8 py-3 md:py-3.5 bg-[var(--color-indigo)] text-white rounded-full text-sm tracking-wider font-medium hover:bg-[#1d4255] transition-colors shadow-lg shadow-[var(--color-indigo)]/20">
+            <Link href="/work" className="px-7 md:px-9 py-3.5 md:py-4 bg-[var(--color-indigo)] text-white rounded-full text-sm md:text-base tracking-wider font-semibold hover:bg-[var(--color-charcoal)] transition-colors shadow-lg shadow-[var(--color-indigo)]/20">
               See My Work
             </Link>
-            <Link href="/contact" className="px-6 md:px-8 py-3 md:py-3.5 border-2 border-[var(--color-indigo)] text-[var(--color-indigo)] rounded-full text-sm tracking-wider font-medium hover:bg-[var(--color-indigo)] hover:text-white transition-colors">
+            <Link href="/contact" className="px-7 md:px-9 py-3.5 md:py-4 border-2 border-[var(--color-indigo)] text-[var(--color-indigo)] rounded-full text-sm md:text-base tracking-wider font-semibold hover:bg-[var(--color-indigo)] hover:text-white transition-colors">
               Say Hi
             </Link>
           </motion.div>
@@ -299,9 +292,3 @@ export default function HeroAnimated() {
     </SectionColorWash>
   );
 }
-
-/* Lazy-loaded desktop-only components */
-import dynamic from "next/dynamic";
-
-const CursorTrailLazy = dynamic(() => import("@/components/CursorTrail"), { ssr: false });
-const HiddenDoodlesLazy = dynamic(() => import("@/components/HiddenDoodles"), { ssr: false });

@@ -23,10 +23,10 @@ export default function FeaturedProjects() {
         <div className="max-w-7xl mx-auto">
           <motion.div className="flex items-end justify-between mb-12" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-[var(--color-charcoal)]/50 mb-3">Selected Work</p>
-              <h2 className="font-[family-name:var(--font-instrument-serif)] text-5xl md:text-6xl italic text-[var(--color-charcoal)]">Featured Projects</h2>
+              <p className="font-[family-name:var(--font-instrument-serif)] italic text-2xl md:text-3xl text-[var(--color-indigo)] mb-1">Selected work</p>
+              <h2 className="font-poster text-6xl md:text-[8.5rem] leading-[0.9] text-[var(--color-charcoal)]">Featured Projects</h2>
             </div>
-            <Link href="/work" className="hidden md:block text-sm text-[var(--color-charcoal)]/50 hover:text-[var(--color-coral)] transition-colors">View all &rarr;</Link>
+            <Link href="/work" className="hidden md:inline-flex rounded-full border-2 border-[var(--color-charcoal)] px-6 py-2.5 text-sm font-semibold text-[var(--color-charcoal)] hover:bg-[var(--color-charcoal)] hover:text-white transition-colors">View all &rarr;</Link>
           </motion.div>
 
           {heroProject && (
@@ -61,7 +61,7 @@ export default function FeaturedProjects() {
                     <span className="px-3 py-1 rounded-full text-xs text-white/90 mb-3 inline-block" style={{ backgroundColor: "rgba(255,255,255,0.15)", backdropFilter: "blur(8px)" }}>
                       {heroProject.category}
                     </span>
-                    <h3 className="font-[family-name:var(--font-instrument-serif)] text-3xl md:text-5xl italic text-white mb-2">{heroProject.title}</h3>
+                    <h3 className="font-poster text-4xl md:text-7xl leading-[0.9] text-white mb-3">{heroProject.title}</h3>
                     <p className="text-white/70 text-sm md:text-base max-w-2xl line-clamp-2">{heroProject.description}</p>
                   </div>
                 </div>
@@ -95,9 +95,9 @@ export default function FeaturedProjects() {
                         <span className="font-[family-name:var(--font-instrument-serif)] text-white/60 text-3xl italic">{project.title}</span>
                       </div>
                     )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                      <h3 className="font-[family-name:var(--font-instrument-serif)] text-xl md:text-2xl italic text-white drop-shadow-lg">{project.title}</h3>
+                      <h3 className="font-poster text-2xl md:text-4xl leading-none text-white drop-shadow-lg">{project.title}</h3>
                       <p className="text-white/70 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         {project.category}{project.year ? ` · ${project.year}` : ""}
                       </p>

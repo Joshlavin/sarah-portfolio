@@ -208,7 +208,7 @@ export default function AboutPage() {
               <p className="text-sm uppercase tracking-[0.3em] text-[var(--color-charcoal)]/50 mb-3">
                 About
               </p>
-              <h1 className="font-[family-name:var(--font-instrument-serif)] text-6xl md:text-7xl italic text-[var(--color-charcoal)] mb-8">
+              <h1 className="font-poster leading-[0.92] text-7xl md:text-[9rem] text-[var(--color-charcoal)] mb-8">
                 Hi, I&apos;m Sarah.
               </h1>
               <div className="space-y-4 text-lg text-[var(--color-charcoal)]/60 font-light leading-relaxed">

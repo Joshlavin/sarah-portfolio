@@ -49,7 +49,7 @@ export default function CategoryPage() {
               &larr; All Work
             </Link>
 
-            <h1 className="font-[family-name:var(--font-instrument-serif)] text-6xl md:text-8xl italic text-[var(--color-charcoal)] mt-4 mb-6">
+            <h1 className="font-poster leading-[0.92] text-7xl md:text-[9rem] text-[var(--color-charcoal)] mt-4 mb-6">
               {category.name}
             </h1>
 

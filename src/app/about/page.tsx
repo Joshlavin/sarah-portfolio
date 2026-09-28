@@ -12,7 +12,7 @@ const filmography = [
     year: "2026",
   },
   {
-    title: "Real Housewives of Beverly Hills Season 21 Reunion",
+    title: "Real Housewives of Beverly Hills Season 14 Reunion",
     role: "Design Contractor, Studio Connelly",
     type: "Television",
     year: "2025",

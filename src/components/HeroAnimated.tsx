@@ -235,13 +235,13 @@ export default function HeroAnimated() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
           >
-            <p className="font-[family-name:var(--font-instrument-serif)] italic text-2xl md:text-3xl text-[var(--color-indigo)] mb-2">
+            <p className="font-[family-name:var(--font-instrument-serif)] italic text-4xl md:text-6xl leading-none text-[var(--color-indigo)] mb-6 md:mb-9">
               Hey, I&apos;m
             </p>
           </motion.div>
 
           <motion.h1
-            className="font-poster text-[26vw] md:text-[15vw] text-[var(--color-charcoal)] leading-[0.82] mb-5"
+            className="font-poster text-[21vw] md:text-[11.5vw] text-[var(--color-charcoal)] leading-[0.88] mb-6 md:mb-9"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.9, ease: "easeOut" }}
@@ -259,7 +259,8 @@ export default function HeroAnimated() {
           </motion.h1>
 
           <motion.div
-            className="font-poster text-3xl md:text-5xl mb-7 md:mb-9 h-9 md:h-14"
+            className="font-poster text-2xl md:text-4xl mb-10 md:mb-14 h-8 md:h-11"
+            style={{ letterSpacing: "0.16em", paddingLeft: "0.16em" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.0, duration: 0.8 }}

@@ -208,7 +208,7 @@ export default function AboutPage() {
               <p className="text-sm uppercase tracking-[0.3em] text-[var(--color-charcoal)]/50 mb-3">
                 About
               </p>
-              <h1 className="font-poster leading-[0.92] text-7xl md:text-[9rem] text-[var(--color-charcoal)] mb-8">
+              <h1 className="font-poster leading-[1.1] md:leading-[0.98] text-7xl md:text-[9rem] text-[var(--color-charcoal)] mb-8">
                 Hi, I&apos;m Sarah.
               </h1>
               <div className="space-y-4 text-lg text-[var(--color-charcoal)]/60 font-light leading-relaxed">
@@ -249,28 +249,28 @@ export default function AboutPage() {
               {filmography.map((film, i) => (
                 <motion.div
                   key={film.title}
-                  className="py-6 border-b border-[var(--color-charcoal)]/10 grid grid-cols-12 gap-4 items-baseline"
+                  className="py-6 border-b border-[var(--color-charcoal)]/10 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 md:grid-cols-12 md:gap-4 items-baseline"
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.08 }}
                 >
-                  <div className="col-span-1">
+                  <div className="md:col-span-1">
                     <span className="text-sm text-[var(--color-charcoal)]/40 font-mono">
                       {film.year}
                     </span>
                   </div>
-                  <div className="col-span-6 md:col-span-5">
+                  <div className="md:col-span-5">
                     <h3 className="font-[family-name:var(--font-instrument-serif)] text-xl italic text-[var(--color-charcoal)]">
                       {film.title}
                     </h3>
                   </div>
-                  <div className="col-span-3 md:col-span-3">
+                  <div className="col-start-2 md:col-start-auto md:col-span-3">
                     <span className="text-sm text-[var(--color-charcoal)]/60">
                       {film.role}
                     </span>
                   </div>
-                  <div className="col-span-2 md:col-span-3 text-right">
+                  <div className="col-start-2 md:col-start-auto md:col-span-3 md:text-right">
                     <span className="text-xs text-[var(--color-charcoal)]/40 uppercase tracking-wider">
                       {film.type}
                     </span>
@@ -294,28 +294,28 @@ export default function AboutPage() {
               {events.map((event, i) => (
                 <motion.div
                   key={event.title}
-                  className="py-6 border-b border-[var(--color-charcoal)]/10 grid grid-cols-12 gap-4 items-baseline"
+                  className="py-6 border-b border-[var(--color-charcoal)]/10 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 md:grid-cols-12 md:gap-4 items-baseline"
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.08 }}
                 >
-                  <div className="col-span-1">
+                  <div className="md:col-span-1">
                     <span className="text-sm text-[var(--color-charcoal)]/40 font-mono">
                       {event.year}
                     </span>
                   </div>
-                  <div className="col-span-6 md:col-span-5">
+                  <div className="md:col-span-5">
                     <h3 className="font-[family-name:var(--font-instrument-serif)] text-xl italic text-[var(--color-charcoal)]">
                       {event.title}
                     </h3>
                   </div>
-                  <div className="col-span-3 md:col-span-3">
+                  <div className="col-start-2 md:col-start-auto md:col-span-3">
                     <span className="text-sm text-[var(--color-charcoal)]/60">
                       {event.role}
                     </span>
                   </div>
-                  <div className="col-span-2 md:col-span-3 text-right">
+                  <div className="col-start-2 md:col-start-auto md:col-span-3 md:text-right">
                     <span className="text-xs text-[var(--color-charcoal)]/40 uppercase tracking-wider">
                       {event.type}
                     </span>

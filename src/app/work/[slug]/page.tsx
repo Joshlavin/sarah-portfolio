@@ -119,7 +119,7 @@ export default function ProjectPage() {
               )}
             </div>
 
-            <h1 className="font-[family-name:var(--font-instrument-serif)] text-5xl md:text-7xl italic text-[var(--color-charcoal)] mb-6">
+            <h1 className="font-poster leading-[0.92] text-6xl md:text-8xl text-[var(--color-charcoal)] mb-6">
               {project.title}
             </h1>
 

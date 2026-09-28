@@ -29,7 +29,7 @@ export default function CTASection() {
         <p className="text-sm uppercase tracking-[0.3em] text-[var(--color-lime)]/80 mb-5">
           Available for new projects
         </p>
-        <h2 className="font-poster text-6xl md:text-[9rem] leading-[0.92] text-white mb-8">
+        <h2 className="font-poster text-6xl md:text-[9rem] leading-[1.02] md:leading-[0.95] text-white mb-8">
           Let&apos;s build something <span className="text-[var(--color-lime)]">together.</span>
         </h2>
         <p className="text-lg text-white/75 mb-12 max-w-md mx-auto font-light">

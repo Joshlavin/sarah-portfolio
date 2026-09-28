@@ -61,7 +61,7 @@ export default function CapabilitiesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-poster text-6xl md:text-[8.5rem] leading-[0.9] text-[var(--color-charcoal)]">
+            <h2 className="font-poster text-6xl md:text-[8.5rem] leading-[1.02] md:leading-[0.95] text-[var(--color-charcoal)]">
               What I Do
             </h2>
             <p className="mt-4 text-base md:text-lg text-[var(--color-charcoal)]/75 max-w-2xl mx-auto">

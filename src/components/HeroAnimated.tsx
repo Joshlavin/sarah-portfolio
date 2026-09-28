@@ -241,17 +241,17 @@ export default function HeroAnimated() {
           </motion.div>
 
           <motion.h1
-            className="font-poster text-[21vw] md:text-[11.5vw] text-[var(--color-charcoal)] leading-[0.88] mb-6 md:mb-9"
+            className="font-poster text-[16.5vw] md:text-[11.5vw] whitespace-nowrap text-[var(--color-charcoal)] leading-[0.88] mb-6 md:mb-9"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.9, ease: "easeOut" }}
           >
-            <span className="block md:inline">
+            <span className="inline">
               {line1Chars.map((char, i) => (
                 <ProximityLetter key={i} char={char} index={i} containerRef={containerRef} />
               ))}
             </span>
-            <span className="block md:inline md:ml-[0.18em]">
+            <span className="inline ml-[0.18em]">
               {line2Chars.map((char, i) => (
                 <ProximityLetter key={i} char={char} index={i + line1Chars.length} containerRef={containerRef} />
               ))}

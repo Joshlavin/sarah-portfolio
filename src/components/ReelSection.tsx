@@ -66,8 +66,7 @@ export default function ReelSection() {
           <video
             ref={videoRef}
             className="absolute inset-0 w-full h-full object-cover"
-            src="/videos/sarah-lavin-reel.mp4"
-            poster="/videos/reel-poster.webp"
+            src="/videos/Sarah-Lavin-Design-Reel-Widescreen-Under-25MB.mp4"
             muted
             loop
             playsInline

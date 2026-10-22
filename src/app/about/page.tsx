@@ -12,6 +12,18 @@ const filmography = [
     year: "2026",
   },
   {
+    title: "Zig Zag - Green Wednesday",
+    role: "Production Designer",
+    type: "Commercial",
+    year: "2026",
+  },
+  {
+    title: "The Light",
+    role: "Production Designer",
+    type: "Short Film",
+    year: "2026",
+  },
+  {
     title: "Real Housewives of Beverly Hills Season 14 Reunion",
     role: "Design Contractor, Studio Connelly",
     type: "Television",

@@ -36,6 +36,12 @@ const filmography = [
     year: "2025",
   },
   {
+    title: "Trade of Hearts",
+    role: "Art Production Assistant",
+    type: "Vertical Series",
+    year: "2025",
+  },
+  {
     title: "Double Time",
     role: "Production Designer",
     type: "Short Film",
@@ -54,8 +60,20 @@ const filmography = [
     year: "2024",
   },
   {
+    title: "Peeling Off",
+    role: "Scenic Painter",
+    type: "Short Film",
+    year: "2024",
+  },
+  {
     title: "Coop",
     role: "Production Designer",
+    type: "Short Film",
+    year: "2023",
+  },
+  {
+    title: "La Cumbia De Lo Que Pudo Ser",
+    role: "Scenic Painter",
     type: "Short Film",
     year: "2023",
   },
@@ -170,6 +188,33 @@ const events = [
     type: "New York Premiere, Netflix",
     year: "2025",
   },
+  {
+    title: "Televised Event",
+    role: "Prop Fabricator, The Art Firm LA",
+    type: "Fabrication",
+    year: "2024",
+  },
+];
+
+const graphicDesign = [
+  {
+    title: "On the Cusp",
+    role: "Graphic Designer & Social Media Campaign",
+    type: "Film Campaign",
+    year: "2026",
+  },
+  {
+    title: "Spark Salons",
+    role: "Concept Designer",
+    type: "Speaker Series, Unlikely Collaborators",
+    year: "2026",
+  },
+  {
+    title: "Brandeis Kindness Day",
+    role: "Social Campaign & Branding Designer",
+    type: "Campaign",
+    year: "",
+  },
 ];
 
 const tools = [
@@ -247,6 +292,31 @@ export default function AboutPage() {
             </motion.div>
           </div>
 
+          {/* Downloads */}
+          <motion.div
+            className="mb-16 flex flex-wrap gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <a
+              href="/Sarah-Lavin-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-full border border-[var(--color-charcoal)]/20 text-sm uppercase tracking-wider text-[var(--color-charcoal)]/70 hover:border-[var(--color-coral)] hover:text-[var(--color-coral)] transition-colors"
+            >
+              Resume (PDF)
+            </a>
+            <a
+              href="/Sarah-Lavin-Credits-List.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-full border border-[var(--color-charcoal)]/20 text-sm uppercase tracking-wider text-[var(--color-charcoal)]/70 hover:border-[var(--color-coral)] hover:text-[var(--color-coral)] transition-colors"
+            >
+              Credits List (PDF)
+            </a>
+          </motion.div>
+
           {/* Filmography */}
           <motion.div
             className="mb-24"
@@ -304,6 +374,51 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-0">
               {events.map((event, i) => (
+                <motion.div
+                  key={event.title}
+                  className="py-6 border-b border-[var(--color-charcoal)]/10 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 md:grid-cols-12 md:gap-4 items-baseline"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.08 }}
+                >
+                  <div className="md:col-span-1">
+                    <span className="text-sm text-[var(--color-charcoal)]/40 font-mono">
+                      {event.year}
+                    </span>
+                  </div>
+                  <div className="md:col-span-5">
+                    <h3 className="font-[family-name:var(--font-instrument-serif)] text-xl italic text-[var(--color-charcoal)]">
+                      {event.title}
+                    </h3>
+                  </div>
+                  <div className="col-start-2 md:col-start-auto md:col-span-3">
+                    <span className="text-sm text-[var(--color-charcoal)]/60">
+                      {event.role}
+                    </span>
+                  </div>
+                  <div className="col-start-2 md:col-start-auto md:col-span-3 md:text-right">
+                    <span className="text-xs text-[var(--color-charcoal)]/40 uppercase tracking-wider">
+                      {event.type}
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Graphic Design & Campaigns */}
+          <motion.div
+            className="mb-24"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="font-[family-name:var(--font-instrument-serif)] text-4xl italic text-[var(--color-charcoal)] mb-12">
+              Graphic Design &amp; Campaigns
+            </h2>
+            <div className="space-y-0">
+              {graphicDesign.map((event, i) => (
                 <motion.div
                   key={event.title}
                   className="py-6 border-b border-[var(--color-charcoal)]/10 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 md:grid-cols-12 md:gap-4 items-baseline"

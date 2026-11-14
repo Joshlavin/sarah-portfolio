@@ -270,23 +270,23 @@ export default function AboutPage() {
               </h1>
               <div className="space-y-4 text-lg text-[var(--color-charcoal)]/60 font-light leading-relaxed">
                 <p>
-                  I&apos;m a Los Angeles–based designer and visual artist
-                  bouncing between film sets, 3D worlds, paintings, and
-                  whatever medium lets me tell the story best.
+                  I&apos;m a production designer and visual artist based in Los
+                  Angeles. I take projects from concept to install: world-building
+                  and concept art, set design and drafting, in-world graphics, and
+                  build drawings, modeling in Rhino and rendering in Enscape so a
+                  team can see a space before it exists.
                 </p>
                 <p>
-                  I work across the art department: concept art and
-                  world-building, set design and drafting, in-world graphics,
-                  and build drawings. On most projects I&apos;m doing all of
-                  it: modeling and texturing a space in Rhino, rendering it in
-                  Enscape so everyone can see it before it exists, then
-                  drafting it out and seeing it through install.
+                  Before going independent, I was a Junior Production Designer at
+                  Benarroch Productions, designing premieres and activations for
+                  Apple TV and Netflix; recent work includes production designing
+                  the short film The Light, a commercial for Zig-Zag, and graphic
+                  design for the feature film Lies We Follow. MFA in Production
+                  Design, Chapman University.
                 </p>
                 <p>
-                  No matter the medium, I&apos;m drawn to projects that
-                  blend atmosphere, storytelling, and strong visual identity,
-                  and I&apos;m usually sketching ideas somewhere between
-                  deadlines, dog walks, and an iced vanilla latte.
+                  From first sketch to final install, I can design it, draft it,
+                  and build it.
                 </p>
               </div>
             </motion.div>
